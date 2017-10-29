@@ -53,6 +53,13 @@ public class KNXConnector extends Thread implements NetworkLinkListener
 		String hostIP=System.getProperty("knx2mqtt.knx.ip","setme");
 		int port=Integer.getInteger("knx2mqtt.knx.port", KNXnetIPConnection.DEFAULT_PORT).intValue();
 		String localIP=System.getProperty("knx2mqtt.knx.localip");
+		boolean nat=false;
+		String natValue=System.getProperty("knx2mqtt.knx.nat");
+		if (natValue!=null)
+		{
+			if (natValue.equals("NAT"))
+				nat=true;
+		}
 		InetSocketAddress local;
 		if(localIP!=null)
 		{
@@ -73,7 +80,7 @@ public class KNXConnector extends Thread implements NetworkLinkListener
 			local=new InetSocketAddress(localhost,0);
 		}
 		L.log(Level.INFO,"Establishing KNX IP connection to "+hostIP+":"+port+" ("+(knxConnectionType==KNXNetworkLinkIP.TUNNELING?"TUNNEL":"ROUTER")+") from "+local);
-		link=new KNXNetworkLinkIP(knxConnectionType, local, new InetSocketAddress(hostIP, port), false, TPSettings.TP1);
+		link=new KNXNetworkLinkIP(knxConnectionType, local, new InetSocketAddress(hostIP, port), nat, TPSettings.TP1);
 		L.info("KNX IP Connection established");
 	}
 
