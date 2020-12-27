@@ -102,6 +102,10 @@ Examples:
   
   IP address (interface) to use for originating EIBnet/IP messages. No default, mainly useful
   in ROUTING mode to specify the multicast interface.
+
+- knx.nat
+ 
+  If NAT, support nat connections. 
   
 - knx.ets4projectfile
 - knx.ets5projectfile
@@ -127,6 +131,18 @@ to 128MB using the java options
 
     -Xmx128M
     
+Docker
+------
+
+Build dockerized kn2mqtt with
+
+    docker build -t knx2mqtt . 
+
+Start container with
+
+    docker run --env knx2mqtt_mqtt_server='tcp://192.168.1.13:1883' --env knx2mqtt_knx_ip='192.168.1.118' -t knx2mqtt
+
+
 
 See also
 --------
@@ -135,6 +151,8 @@ See also
   
 Changelog
 ---------
+* 0.14 - 2017/10/29 - krambox
+  - Supports Docker and nat
 * 0.13 - 2015/09/16 - owagner
   - fix reading of ETS5 project files (trivial change)
   - added knx.ets5projectfile as a new option for specifying the project file.
