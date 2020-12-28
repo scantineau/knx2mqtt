@@ -7,7 +7,7 @@ deploy:
   file: "build/libs/knx2mqtt.jar"
   skip_cleanup: true
   on:
-    repo: owagner/knx2mqtt
+    repo: scantineau/knx2mqtt
     tags: true
     all_branches: true
 
