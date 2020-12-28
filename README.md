@@ -16,12 +16,12 @@ See https://github.com/mqtt-smarthome for a rationale and architectural overview
 
 Dependencies
 ------------
-* Java 1.7 SE Runtime Environment: https://www.java.com/
-* Calimero (2.2.1): https://github.com/calimero-project/calimero / https://www.auto.tuwien.ac.at/a-lab/calimero.html (used for KNX communication)
+* Java 1.8 SE Runtime Environment: https://www.java.com/
+* Calimero (2.4): https://github.com/calimero-project/calimero / https://www.auto.tuwien.ac.at/a-lab/calimero.html (used for KNX communication)
 * Eclipse Paho: https://www.eclipse.org/paho/clients/java/ (used for MQTT communication)
 * Minimal-JSON: https://github.com/ralfstx/minimal-json (used for JSON creation and parsing)
 
-[![Build Status](https://travis-ci.org/owagner/knx2mqtt.svg)](https://travis-ci.org/owagner/knx2mqtt) Automatically built jars can be downloaded from the release page on GitHub at https://github.com/owagner/knx2mqtt/releases
+[![Build Status](https://travis-ci.org/scantineau/knx2mqtt.svg)](https://travis-ci.org/scantineau/knx2mqtt) Automatically built jars can be downloaded from the release page on GitHub at https://github.com/scantineau/knx2mqtt/releases
 
 
 EIBD
@@ -54,7 +54,7 @@ The message format generated is a JSON encoded object with the following members
 * knx_src_addr - when sending message, knx2mqtt fills in the source EIB address of the group write which 
   triggered the message
 * knx_textual - a textual representation of the value, or the numeric value with a unit specififer (e.g. "100%")
-
+* GA - the group address used
 
 DPT Definitions and Project files
 ---------------------------------
@@ -77,7 +77,7 @@ and the usual project file parsing takes place.
 
 Usage
 -----
-Configuration options can either be specified on the command line, or as system properties with the prefix "knx2mqtt".
+Configuration options can either be specified on the command line, or as system properties (or environment, see Docker) with the prefix "knx2mqtt".
 Examples:
 
     java -jar knx2mqtt.jar knx.ip=127.0.0.1
@@ -105,7 +105,7 @@ Examples:
 
 - knx.nat
  
-  If NAT, support nat connections. 
+  Boolean to support nat connections. Defaults to false.
   
 - knx.ets4projectfile
 - knx.ets5projectfile
@@ -121,6 +121,14 @@ Examples:
 - mqtt.clientid
 
   ClientID to use in the MQTT connection. Defaults to "knx2mqtt".
+  
+- mqtt.user
+
+  user to use in the MQTT connection.
+  
+- mqtt.password
+
+  password to use in the MQTT connection.
   
 - mqtt.topic
 
@@ -142,7 +150,18 @@ Start container with
 
     docker run --env knx2mqtt_mqtt_server='tcp://192.168.1.13:1883' --env knx2mqtt_knx_ip='192.168.1.118' -t knx2mqtt
 
+docker-compose file :
 
+    version: '3'
+    services:
+      knx2mqtt:
+        image: scantineau/knx2mqtt
+        env_file:
+          - knx2mqtt.env
+        volumes:
+          - /etc/localtime:/etc/localtime:ro
+          - /path/to/config:/knx2mqtt/config/:ro
+          - /path/to/data:/knx2mqtt/data/
 
 See also
 --------
@@ -151,6 +170,17 @@ See also
   
 Changelog
 ---------
+* 0.15 - 2020/12/28 - scantineau
+  - update jvm to 1.8
+  - update calimero-core to 2.4
+  - update paho-client to 1.2.0
+  - support listening to mqtt topics using GA and names
+  - support different path for project and cache file
+  - support mqtt user and password
+  - support System environment configuration (see Docker example)
+  - added group address in mqtt message
+  - removed configuration fixed in docker image
+  - added example of docker usage with docker-compose
 * 0.14 - 2017/10/29 - krambox
   - Supports Docker and nat
 * 0.13 - 2015/09/16 - owagner

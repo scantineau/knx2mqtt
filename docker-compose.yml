@@ -1,0 +1,10 @@
+version: '3'
+services:
+  knx2mqtt:
+    image: scantineau/knx2mqtt
+    env_file:
+      - knx2mqtt.env
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /path/to/config:/knx2mqtt/config/:ro
+      - /path/to/data:/knx2mqtt/data/
