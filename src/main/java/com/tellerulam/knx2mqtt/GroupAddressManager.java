@@ -200,9 +200,9 @@ public class GroupAddressManager {
             StringBuilder name = null;
             for (Element pe = e; ; ) {
                 if (name == null)
-                    name = new StringBuilder(pe.getAttribute("Name"));
+                    name = new StringBuilder(getSanitizedAttribute(pe));
                 else
-                    name.insert(0, pe.getAttribute("Name") + "/");
+                    name.insert(0, getSanitizedAttribute(pe) + "/");
 
                 pe = (Element) pe.getParentNode();
                 if (!"GroupRange".equals(pe.getNodeName()))
@@ -221,6 +221,10 @@ public class GroupAddressManager {
             // We're not lucky. Look into the connections
             processETS4GroupAddressConnections(zf, doc, sendConnections, receiveConnections, e.getAttribute("Id"), address, name.toString());
         }
+    }
+
+    private static String getSanitizedAttribute(Element pe) {
+        return pe.getAttribute("Name").replace('/', '_');
     }
 
     /*

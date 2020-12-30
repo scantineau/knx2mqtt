@@ -170,6 +170,8 @@ See also
   
 Changelog
 ---------
+* 0.16 - 2020/12/30 - scantineau
+  - sanitize group address names and remove any "/" to avoid MQTT sub-topic creation
 * 0.15 - 2020/12/28 - scantineau
   - update jvm to 1.8
   - update calimero-core to 2.4
