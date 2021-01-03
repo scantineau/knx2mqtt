@@ -33,6 +33,8 @@ which by default uses TCP port 6720.
 
 Topics
 ------
+**Only if you don't set homeassistant to true**
+
 knx2mqtt uses the group address hierarchy as defined in ETS4 for topics. The group addresses are translated to
 hierarchical group names if a ETS4 project file is specifed. Example
 
@@ -44,6 +46,8 @@ currently running (1) and connected to the KNX bus (2). It's set to 0 on disconn
 
 MQTT Message format
 --------------------
+**Only if you don't set homeassistant to true**
+
 The message format generated is a JSON encoded object with the following members:
 
 * val - the actual value, in numeric format
@@ -134,6 +138,10 @@ Examples:
 
   The topic prefix used for publishing and subscribing. Defaults to "knx/".
 
+- homeassistant
+
+  set it to true if you want to publish to MQTT using Home Assistant format.
+  
 When running knx2mqtt on a server class machine, it makes sense to limit the memory usage
 to 128MB using the java options
 
@@ -163,6 +171,22 @@ docker-compose file :
           - /path/to/config:/knx2mqtt/config/:ro
           - /path/to/data:/knx2mqtt/data/
 
+Home assistant support
+----------------------
+
+Publish topic configuration (retained) for each GA. 
+
+Example of payload published to homeassistant/sensor/knx2mqtt/config
+
+    {
+        "~": "homeassistant/sensor/knx2mqtt",
+        "name": "knx2mqtt",
+        "command_topic": "~/set",
+        "state_topic": "~/state"
+    }
+
+See : https://www.home-assistant.io/docs/mqtt/discovery/
+
 See also
 --------
 - Project overview: https://github.com/mqtt-smarthome
@@ -170,6 +194,8 @@ See also
   
 Changelog
 ---------
+* 0.17 - 2021/01/03 - scantineau
+  - support Home Assistant topic configuration
 * 0.16 - 2020/12/30 - scantineau
   - sanitize group address names and remove any "/" to avoid MQTT sub-topic creation
 * 0.15 - 2020/12/28 - scantineau
