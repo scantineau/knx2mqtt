@@ -1,5 +1,9 @@
 package com.tellerulam.knx2mqtt;
 
+import com.tellerulam.knx2mqtt.knx.GroupAddressManager;
+import com.tellerulam.knx2mqtt.knx.KNXConnector;
+import com.tellerulam.knx2mqtt.mqtt.MQTTHandlerHomeAssistant;
+import com.tellerulam.knx2mqtt.mqtt.MQTTHandlerJson;
 import org.eclipse.paho.client.mqttv3.MqttException;
 
 import java.io.IOException;
@@ -14,6 +18,7 @@ import java.util.regex.Pattern;
 
 public class Main {
     static final Timer t = new Timer(true);
+    public static boolean homeAssistant;
 
     private static String getVersion() {
         // First, try the manifest tag
@@ -55,7 +60,19 @@ public class Main {
         SyslogHandler.readConfig();
         GroupAddressManager.loadETS4Project();
         GroupAddressManager.loadGroupAddressTable();
-        MQTTHandler.init();
+        homeAssistant = Boolean.parseBoolean(System.getProperty("knx2mqtt.homeassistant", "false"));
+        if (homeAssistant){
+            MQTTHandlerHomeAssistant.init();
+        } else {
+            MQTTHandlerJson.init();
+        }
         KNXConnector.launch();
+        if (homeAssistant) {
+            MQTTHandlerHomeAssistant.publishConfigTopics();
+        }
+    }
+
+    public static Timer getTimer() {
+        return t;
     }
 }

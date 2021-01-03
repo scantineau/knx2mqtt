@@ -1,5 +1,6 @@
-package com.tellerulam.knx2mqtt;
+package com.tellerulam.knx2mqtt.knx;
 
+import com.tellerulam.knx2mqtt.Main;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -28,7 +29,6 @@ import java.util.zip.ZipFile;
 public class GroupAddressManager {
     private static final Logger L = Logger.getLogger(GroupAddressManager.class.getName());
     static private Map<String, GroupAddressInfo> gaTable = new HashMap<>();
-    static private Map<String, GroupAddressInfo> gaByName = new HashMap<>();
     private static Map<String, Map<String, Map<String, String>>> deviceDescriptionCache;
     private static Map<Integer, String> dptMap;
     private static SAXParserFactory saxFactory;
@@ -38,13 +38,20 @@ public class GroupAddressManager {
     }
 
     public static GroupAddressInfo getGAInfoForName(String name) {
-        return gaByName.get(name);
+        return gaTable.values().stream()
+                .filter(groupAddressInfo -> groupAddressInfo.getName().equals(name))
+                .findFirst()
+                .orElse(null);
+    }
+
+    public static Map<String, GroupAddressInfo> getGATable() {
+        return gaTable;
     }
 
     /**
      * Load an ETS4 Group Address Export
      */
-    static void loadGroupAddressTable() {
+    public static void loadGroupAddressTable() {
         String gaFile = System.getProperty("knx2mqtt.knx.groupaddresstable");
         if (gaFile == null) {
             L.config("No Group Address table specified");
@@ -76,7 +83,6 @@ public class GroupAddressManager {
                 String addr = ((Element) sn).getAttribute("Address");
                 GroupAddressInfo gai = new GroupAddressInfo(name, addr);
                 gaTable.put(addr, gai);
-                gaByName.put(name, gai);
             }
         }
     }
@@ -85,7 +91,7 @@ public class GroupAddressManager {
      * Load an ETS4 or ETS5 project file
      */
     @SuppressWarnings("unchecked")
-    static void loadETS4Project() {
+    public static void loadETS4Project() {
         String gaFile = System.getProperty("knx2mqtt.knx.ets5projectfile");
         if (gaFile == null)
             gaFile = System.getProperty("knx2mqtt.knx.ets4projectfile");
@@ -105,7 +111,6 @@ public class GroupAddressManager {
             if (cacheFile.lastModified() > projectFile.lastModified()) {
                 try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(cacheFile))) {
                     gaTable = (Map<String, GroupAddressInfo>) ois.readObject();
-                    gaByName = (Map<String, GroupAddressInfo>) ois.readObject();
                     for (GroupAddressInfo gai : gaTable.values())
                         gai.createTranslator();
                     L.config("Read group address table from " + cacheFile + ": " + gaTable);
@@ -144,7 +149,6 @@ public class GroupAddressManager {
         }
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(cacheFile))) {
             oos.writeObject(gaTable);
-            oos.writeObject(gaByName);
         } catch (Exception e) {
             L.log(Level.INFO, "Unable to write project cache file " + cacheFile + ". This does not impair functionality, but subsequent startups will not be faster", e);
         }
@@ -161,7 +165,6 @@ public class GroupAddressManager {
         if (gai == null) {
             gai = new GroupAddressInfo(name, ga);
             gaTable.put(ga, gai);
-            gaByName.put(name, gai);
         }
         Pattern p = Pattern.compile("DPS?T-([0-9]+)(-([0-9]+))?");
         Matcher m = p.matcher(datapointType);
@@ -181,10 +184,10 @@ public class GroupAddressManager {
         }
         gai.dpt = dptBuilder.toString();
     }
-
     /*
      * First step in parsing: find the GroupAddresses and their IDs
      */
+
     private static void processETS4ProjectFile(ZipFile zf, ZipEntry zep) throws ParserConfigurationException, SAXException, IOException {
         DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
         docBuilderFactory.setCoalescing(true);
@@ -226,10 +229,10 @@ public class GroupAddressManager {
     private static String getSanitizedAttribute(Element pe) {
         return pe.getAttribute("Name").replace('/', '_');
     }
-
     /*
      * Find out what is connected to this group address
      */
+
     private static void processETS4GroupAddressConnections(ZipFile zf, Document doc, NodeList sendConnections, NodeList receiveConnections, String id, String address, String name) throws SAXException, IOException, ParserConfigurationException {
         boolean foundConnection = false;
         for (int attempt = 0; attempt < 4; attempt++) {
@@ -400,8 +403,20 @@ public class GroupAddressManager {
         transient long lastValueTimestamp;
 
         private GroupAddressInfo(String name, String address) {
-            this.name = name;
+            this.name = Main.homeAssistant ? name.replace(' ', '_').replace('.', '_').replace('-', '_').replace('/', '_') : name;
             this.address = address;
+        }
+
+        public String getAddress() {
+            return address;
+        }
+
+        public String getDpt() {
+            return dpt;
+        }
+
+        public String getName() {
+            return name;
         }
 
         @Override
@@ -449,7 +464,7 @@ public class GroupAddressManager {
             return newVal;
         }
 
-        public String getTextutal() {
+        public String getTextual() {
             String textual;
             xlator.setAppendUnit(true);
             textual = xlator.getValue();

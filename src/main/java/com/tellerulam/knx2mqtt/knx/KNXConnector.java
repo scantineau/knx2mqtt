@@ -1,6 +1,7 @@
-package com.tellerulam.knx2mqtt;
+package com.tellerulam.knx2mqtt.knx;
 
-import com.tellerulam.knx2mqtt.GroupAddressManager.GroupAddressInfo;
+import com.tellerulam.knx2mqtt.mqtt.MQTTHandler;
+import com.tellerulam.knx2mqtt.knx.GroupAddressManager.GroupAddressInfo;
 import tuwien.auto.calimero.*;
 import tuwien.auto.calimero.dptxlator.DPTXlator;
 import tuwien.auto.calimero.dptxlator.DPTXlatorBoolean;
@@ -209,7 +210,7 @@ public class KNXConnector extends Thread implements NetworkLinkListener {
                     L.info("Got " + val + " to unknown " + dest + " from " + src + " (ASDU length " + asdu.length + ")");
                     MQTTHandler.publish(dest.toString(), val, src.toString(), dpt, null, now, now, dest.toString());
                 } else {
-                    MQTTHandler.publish(gaInfo.name, gaInfo.translateAndStoreValue(asdu, now), src.toString(), gaInfo.dpt, gaInfo.getTextutal(), now, gaInfo.lastValueTimestamp, dest.toString());
+                    MQTTHandler.publish(gaInfo.name, gaInfo.translateAndStoreValue(asdu, now), src.toString(), gaInfo.dpt, gaInfo.getTextual(), now, gaInfo.lastValueTimestamp, dest.toString());
                 }
             } catch (KNXException e) {
                 L.log(Level.WARNING, "Error converting ASDU to " + dest + " from " + src);
