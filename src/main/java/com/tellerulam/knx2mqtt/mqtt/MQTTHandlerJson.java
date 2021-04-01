@@ -1,6 +1,7 @@
 package com.tellerulam.knx2mqtt.mqtt;
 
 import com.eclipsesource.json.JsonObject;
+import com.tellerulam.knx2mqtt.knx.GroupAddressInfo;
 import com.tellerulam.knx2mqtt.knx.GroupAddressManager;
 import com.tellerulam.knx2mqtt.knx.KNXConnector;
 import org.eclipse.paho.client.mqttv3.MqttException;
@@ -81,7 +82,7 @@ public class MQTTHandlerJson extends MQTTHandler {
             return;
         }
         // Now translate the topic into a group address
-        GroupAddressManager.GroupAddressInfo gai = GroupAddressManager.getGAInfoForName(namePart);
+        GroupAddressInfo gai = GroupAddressManager.getGAInfoForName(namePart);
         if (gai == null) {
             // We didn't detect a group name, is it a group address ?
             gai = GroupAddressManager.getGAInfoForAddress(namePart);

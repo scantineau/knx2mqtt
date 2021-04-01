@@ -1,7 +1,6 @@
 package com.tellerulam.knx2mqtt.knx;
 
 import com.tellerulam.knx2mqtt.mqtt.MQTTHandler;
-import com.tellerulam.knx2mqtt.knx.GroupAddressManager.GroupAddressInfo;
 import tuwien.auto.calimero.*;
 import tuwien.auto.calimero.dptxlator.DPTXlator;
 import tuwien.auto.calimero.dptxlator.DPTXlatorBoolean;

@@ -1,0 +1,1854 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KNX xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CreatedBy="ETS5" ToolVersion="5.7.1093.38570" xmlns="http://knx.org/xml/project/20">
+  <Project Id="P-0930">
+    <Installations>
+      <Installation Name="" BCUKey="4294967295" DefaultLine="P-0930-0_L-3" IPRoutingLatencyTolerance="1000">
+        <Topology>
+          <Area Id="P-0930-0_A-1" Address="0" Name="Zone de ligne réseau" Puid="1">
+            <Line Id="P-0930-0_L-1" Address="0" Name="Ligne réseau" MediumTypeRefId="MT-5" Puid="2" />
+          </Area>
+          <Area Id="P-0930-0_A-2" Address="1" Name="Nouvelle zone" Puid="3">
+            <Line Id="P-0930-0_L-2" Address="0" Name="Ligne principale" MediumTypeRefId="MT-5" Puid="4" />
+            <Line Id="P-0930-0_L-3" Address="1" Name="Nouvelle ligne" MediumTypeRefId="MT-0" Puid="5">
+              <DeviceInstance Id="P-0930-0_DI-2" Address="68" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_P-WST3xx" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_HP-E05E-11-E2C3" Comment="" Description="cuisine porte" SerialNumber="AAlAFVAv" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T10:44:36.575568Z" LastDownload="2020-12-28T17:02:53.1018499Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" UniqueId="{CBD73C21-AEE8-485D-83C7-ECE4BC32D08B}" Puid="218">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1332_R-840" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-531857694_R-531857694" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-982276810_R-982277151" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-371008879_R-371008879" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-982276810_R-982277165" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-926_R-3901" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-893_R-3839" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1173490589_R-1173490589" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-37_R-67" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-713_R-3197" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-715_R-3541" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1085561504_R-1085561504" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-33_R-50" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1378431638_R-1378431638" Value="1" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-18_R-1636231488" ChannelId="CH-1470867484" Links="GA-12" />
+                  <ComObjectInstanceRef RefId="O-13_R-173361915" ChannelId="CH-1470867484" Links="GA-13" />
+                  <ComObjectInstanceRef RefId="O-38_R-1636231489" ChannelId="CH-1874152011" Links="GA-10" />
+                  <ComObjectInstanceRef RefId="O-33_R-173361916" ChannelId="CH-1874152011" Links="GA-11" />
+                  <ComObjectInstanceRef RefId="O-98_R-229" ChannelId="CH-4" Links="GA-17" />
+                  <ComObjectInstanceRef RefId="O-93_R-203" ChannelId="CH-4" Links="GA-18" />
+                  <ComObjectInstanceRef RefId="O-132_R-1324979835" ChannelId="CH-711352597" Links="GA-87" />
+                </ComObjectInstanceRefs>
+                <ChannelInstances>
+                  <ChannelInstance Id="P-0930-0_DI-2_CI-6" Name="Bouton poussoir 3" IsActive="true" RefId="CH-1" />
+                  <ChannelInstance Id="P-0930-0_DI-2_CI-7" Name="Bouton poussoir 4" IsActive="true" RefId="CH-2" />
+                  <ChannelInstance Id="P-0930-0_DI-2_CI-9" Name="Bouton poussoir 5" IsActive="true" RefId="CH-4" />
+                  <ChannelInstance Id="P-0930-0_DI-2_CI-10" Name="Bouton poussoir 6" IsActive="true" RefId="CH-5" />
+                  <ChannelInstance Id="P-0930-0_DI-2_CI-11" Name="Général" IsActive="true" RefId="CH-486183250" />
+                  <ChannelInstance Id="P-0930-0_DI-2_CI-12" Name="Gestion des LED" IsActive="true" RefId="CH-889467777" />
+                  <ChannelInstance Id="P-0930-0_DI-2_CI-13" Name="Bouton poussoir 1" IsActive="true" RefId="CH-1470867484" />
+                  <ChannelInstance Id="P-0930-0_DI-2_CI-14" Name="Bouton poussoir 2" IsActive="true" RefId="CH-1874152011" />
+                  <ChannelInstance Id="P-0930-0_DI-2_CI-22" Name="Sonde de température interne" IsActive="true" RefId="CH-711352597" />
+                  <ChannelInstance Id="P-0930-0_DI-2_CI-23" Name="Informations" IsActive="true" RefId="CH-1297404556" />
+                </ChannelInstances>
+                <GroupObjectTree GroupObjectInstances="O-4_R-691479710 O-6_R-858138322 O-5_R-982098703 O-18_R-1636231488 O-13_R-173361915 O-38_R-1636231489 O-33_R-173361916 O-98_R-229 O-93_R-203 O-132_R-1324979835">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-1" Text="Bouton poussoir 3" />
+                    <Node Type="Channel" RefId="CH-2" Text="Bouton poussoir 4" />
+                    <Node Type="Channel" RefId="CH-4" Text="Bouton poussoir 5" GroupObjectInstances="O-98_R-229 O-93_R-203" />
+                    <Node Type="Channel" RefId="CH-5" Text="Bouton poussoir 6" />
+                    <Node Type="Channel" RefId="CH-486183250" Text="Général" GroupObjectInstances="O-4_R-691479710" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="Gestion des LED" GroupObjectInstances="O-6_R-858138322 O-5_R-982098703" />
+                    <Node Type="Channel" RefId="CH-1470867484" Text="Bouton poussoir 1" GroupObjectInstances="O-18_R-1636231488 O-13_R-173361915" />
+                    <Node Type="Channel" RefId="CH-1874152011" Text="Bouton poussoir 2" GroupObjectInstances="O-38_R-1636231489 O-33_R-173361916" />
+                    <Node Type="Channel" RefId="CH-711352597" Text="Sonde de température interne" GroupObjectInstances="O-132_R-1324979835" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Informations" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:02:53.1158534Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-7" Address="69" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_P-WST3xx" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_HP-E05E-11-E2C3" Comment="" Description="cuisine couloir" SerialNumber="AAlAFVAm" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T10:44:36.575568Z" LastDownload="2020-12-28T17:03:06.1225438Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" UniqueId="{2EA5EEC9-753A-4051-B912-BFF501A3521F}" Puid="227">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1332_R-840" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-531857694_R-531857694" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-982276810_R-982277151" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-33_R-50" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1085561504_R-1085561504" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-103_R-520" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-1087" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-323_R-1385" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-332_R-1448" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-713_R-3197" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-715_R-3541" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-893_R-3839" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-926_R-3901" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-952_R-3928" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-954_R-4285" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1101_R-4538" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-1125_R-4600" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1378431638_R-1378431638" Value="1" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-58_R-41" ChannelId="CH-1" Links="GA-36" />
+                  <ComObjectInstanceRef RefId="O-53_R-25" ChannelId="CH-1" Links="GA-37" />
+                  <ComObjectInstanceRef RefId="O-98_R-229" ChannelId="CH-4" Links="GA-10" />
+                  <ComObjectInstanceRef RefId="O-93_R-203" ChannelId="CH-4" Links="GA-11" />
+                  <ComObjectInstanceRef RefId="O-118_R-321" ChannelId="CH-5" Links="GA-12" />
+                  <ComObjectInstanceRef RefId="O-113_R-310" ChannelId="CH-5" Links="GA-13" />
+                  <ComObjectInstanceRef RefId="O-132_R-1324979835" ChannelId="CH-711352597" Links="GA-87" />
+                </ComObjectInstanceRefs>
+                <ChannelInstances>
+                  <ChannelInstance Id="P-0930-0_DI-7_CI-1" Name="Général" IsActive="true" RefId="CH-486183250" />
+                  <ChannelInstance Id="P-0930-0_DI-7_CI-2" Name="Gestion des LED" IsActive="true" RefId="CH-889467777" />
+                  <ChannelInstance Id="P-0930-0_DI-7_CI-3" Name="Bouton poussoir 1" IsActive="true" RefId="CH-1470867484" />
+                  <ChannelInstance Id="P-0930-0_DI-7_CI-4" Name="Bouton poussoir 2" IsActive="true" RefId="CH-1874152011" />
+                  <ChannelInstance Id="P-0930-0_DI-7_CI-12" Name="Sonde de température interne" IsActive="true" RefId="CH-711352597" />
+                  <ChannelInstance Id="P-0930-0_DI-7_CI-13" Name="Informations" IsActive="true" RefId="CH-1297404556" />
+                  <ChannelInstance Id="P-0930-0_DI-7_CI-19" Name="Bouton poussoir 3" IsActive="true" RefId="CH-1" />
+                  <ChannelInstance Id="P-0930-0_DI-7_CI-20" Name="Bouton poussoir 4" IsActive="true" RefId="CH-2" />
+                  <ChannelInstance Id="P-0930-0_DI-7_CI-22" Name="Bouton poussoir 5" IsActive="true" RefId="CH-4" />
+                  <ChannelInstance Id="P-0930-0_DI-7_CI-23" Name="Bouton poussoir 6" IsActive="true" RefId="CH-5" />
+                </ChannelInstances>
+                <GroupObjectTree GroupObjectInstances="O-4_R-691479710 O-6_R-858138322 O-5_R-982098703 O-18_R-1636231488 O-13_R-173361915 O-58_R-41 O-53_R-25 O-98_R-229 O-93_R-203 O-118_R-321 O-113_R-310 O-132_R-1324979835">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-486183250" Text="Général" GroupObjectInstances="O-4_R-691479710" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="Gestion des LED" GroupObjectInstances="O-6_R-858138322 O-5_R-982098703" />
+                    <Node Type="Channel" RefId="CH-1470867484" Text="Bouton poussoir 1" GroupObjectInstances="O-18_R-1636231488 O-13_R-173361915" />
+                    <Node Type="Channel" RefId="CH-1874152011" Text="Bouton poussoir 2" />
+                    <Node Type="Channel" RefId="CH-711352597" Text="Sonde de température interne" GroupObjectInstances="O-132_R-1324979835" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Informations" />
+                    <Node Type="Channel" RefId="CH-1" Text="Bouton poussoir 3" GroupObjectInstances="O-58_R-41 O-53_R-25" />
+                    <Node Type="Channel" RefId="CH-2" Text="Bouton poussoir 4" />
+                    <Node Type="Channel" RefId="CH-4" Text="Bouton poussoir 5" GroupObjectInstances="O-98_R-229 O-93_R-203" />
+                    <Node Type="Channel" RefId="CH-5" Text="Bouton poussoir 6" GroupObjectInstances="O-118_R-321 O-113_R-310" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:03:06.1395475Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-8" Address="70" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_P-WST3xx" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_HP-E05E-11-E2C3" Comment="" Description="cuisine sam" SerialNumber="AAlAFVFU" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T10:44:36.575568Z" LastDownload="2020-12-28T17:03:20.4998201Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" UniqueId="{9C992693-D3AF-4F26-A0AE-5FF5DCCAB174}" Puid="228">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1332_R-840" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-531857694_R-531857694" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-982276810_R-982277151" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-33_R-50" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1085561504_R-1085561504" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-371008879_R-371008879" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-982276810_R-982277165" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-37_R-67" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1173490589_R-1173490589" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-103_R-520" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-1087" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-323_R-1385" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-332_R-1448" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1378431638_R-1378431638" Value="1" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-18_R-1636231488" ChannelId="CH-1470867484" Links="GA-10" />
+                  <ComObjectInstanceRef RefId="O-13_R-173361915" ChannelId="CH-1470867484" Links="GA-11" />
+                  <ComObjectInstanceRef RefId="O-38_R-1636231489" ChannelId="CH-1874152011" Links="GA-12" />
+                  <ComObjectInstanceRef RefId="O-33_R-173361916" ChannelId="CH-1874152011" Links="GA-13" />
+                  <ComObjectInstanceRef RefId="O-58_R-41" ChannelId="CH-1" Links="GA-17" />
+                  <ComObjectInstanceRef RefId="O-53_R-25" ChannelId="CH-1" Links="GA-18" />
+                  <ComObjectInstanceRef RefId="O-132_R-1324979835" ChannelId="CH-711352597" Links="GA-87" />
+                </ComObjectInstanceRefs>
+                <ChannelInstances>
+                  <ChannelInstance Id="P-0930-0_DI-8_CI-1" Name="Général" IsActive="true" RefId="CH-486183250" />
+                  <ChannelInstance Id="P-0930-0_DI-8_CI-2" Name="Gestion des LED" IsActive="true" RefId="CH-889467777" />
+                  <ChannelInstance Id="P-0930-0_DI-8_CI-3" Name="Bouton poussoir 1" IsActive="true" RefId="CH-1470867484" />
+                  <ChannelInstance Id="P-0930-0_DI-8_CI-4" Name="Bouton poussoir 2" IsActive="true" RefId="CH-1874152011" />
+                  <ChannelInstance Id="P-0930-0_DI-8_CI-12" Name="Sonde de température interne" IsActive="true" RefId="CH-711352597" />
+                  <ChannelInstance Id="P-0930-0_DI-8_CI-13" Name="Informations" IsActive="true" RefId="CH-1297404556" />
+                  <ChannelInstance Id="P-0930-0_DI-8_CI-19" Name="Bouton poussoir 3" IsActive="true" RefId="CH-1" />
+                  <ChannelInstance Id="P-0930-0_DI-8_CI-20" Name="Bouton poussoir 4" IsActive="true" RefId="CH-2" />
+                  <ChannelInstance Id="P-0930-0_DI-8_CI-22" Name="Bouton poussoir 5" IsActive="true" RefId="CH-4" />
+                  <ChannelInstance Id="P-0930-0_DI-8_CI-23" Name="Bouton poussoir 6" IsActive="true" RefId="CH-5" />
+                </ChannelInstances>
+                <GroupObjectTree GroupObjectInstances="O-4_R-691479710 O-6_R-858138322 O-5_R-982098703 O-18_R-1636231488 O-13_R-173361915 O-38_R-1636231489 O-33_R-173361916 O-58_R-41 O-53_R-25 O-132_R-1324979835">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-486183250" Text="Général" GroupObjectInstances="O-4_R-691479710" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="Gestion des LED" GroupObjectInstances="O-6_R-858138322 O-5_R-982098703" />
+                    <Node Type="Channel" RefId="CH-1470867484" Text="Bouton poussoir 1" GroupObjectInstances="O-18_R-1636231488 O-13_R-173361915" />
+                    <Node Type="Channel" RefId="CH-1874152011" Text="Bouton poussoir 2" GroupObjectInstances="O-38_R-1636231489 O-33_R-173361916" />
+                    <Node Type="Channel" RefId="CH-711352597" Text="Sonde de température interne" GroupObjectInstances="O-132_R-1324979835" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Informations" />
+                    <Node Type="Channel" RefId="CH-1" Text="Bouton poussoir 3" GroupObjectInstances="O-58_R-41 O-53_R-25" />
+                    <Node Type="Channel" RefId="CH-2" Text="Bouton poussoir 4" />
+                    <Node Type="Channel" RefId="CH-4" Text="Bouton poussoir 5" />
+                    <Node Type="Channel" RefId="CH-5" Text="Bouton poussoir 6" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:03:20.5278253Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-9" Address="67" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_P-WST3xx" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_HP-E05E-11-E2C3" Comment="" Description="cuisine PT" SerialNumber="AAlAFVFQ" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T10:44:36.575568Z" LastDownload="2020-12-28T17:02:39.7788197Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" UniqueId="{D6294F13-6FC2-4CF0-8F18-50C26833CB74}" Puid="229">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1332_R-840" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-952_R-3928" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-954_R-4285" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1101_R-4538" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-1125_R-4600" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-323_R-1385" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-332_R-1448" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-713_R-3197" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-715_R-3541" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-893_R-3839" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-926_R-3901" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1378431638_R-1378431638" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-569" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-242_R-1192" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-570" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-542" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-472_R-2148" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-460_R-2086" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1589" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-381_R-1924" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1591" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1833" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-406_R-2019" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1587" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1836" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-1090" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-103_R-520" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-353_R-1383" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-267_R-1293" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-1087" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1170361595_R-1170361595" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1307812492_R-1307812492" Value="2" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-118_R-321" ChannelId="CH-5" Links="GA-12" />
+                  <ComObjectInstanceRef RefId="O-113_R-310" ChannelId="CH-5" Links="GA-13" />
+                  <ComObjectInstanceRef RefId="O-98_R-229" ChannelId="CH-4" Links="GA-14" />
+                  <ComObjectInstanceRef RefId="O-93_R-203" ChannelId="CH-4" Links="GA-15" />
+                  <ComObjectInstanceRef RefId="O-132_R-1324979835" ChannelId="CH-711352597" Links="GA-87" />
+                  <ComObjectInstanceRef RefId="O-53_R-25" ChannelId="CH-1" Links="GA-11" />
+                  <ComObjectInstanceRef RefId="O-73_R-119" ChannelId="CH-2" Links="GA-11" />
+                  <ComObjectInstanceRef RefId="O-81_R-135" ChannelId="CH-2" Links="GA-105" />
+                  <ComObjectInstanceRef RefId="O-78_R-130" ChannelId="CH-2" Links="GA-10" />
+                  <ComObjectInstanceRef RefId="O-58_R-41" ChannelId="CH-1" Links="GA-10" />
+                  <ComObjectInstanceRef RefId="O-61_R-53" ChannelId="CH-1" Links="GA-105" />
+                </ComObjectInstanceRefs>
+                <ChannelInstances>
+                  <ChannelInstance Id="P-0930-0_DI-9_CI-1" Name="Général" IsActive="true" RefId="CH-486183250" />
+                  <ChannelInstance Id="P-0930-0_DI-9_CI-2" Name="Gestion des LED" IsActive="true" RefId="CH-889467777" />
+                  <ChannelInstance Id="P-0930-0_DI-9_CI-3" Name="Bouton poussoir 1" IsActive="true" RefId="CH-1470867484" />
+                  <ChannelInstance Id="P-0930-0_DI-9_CI-4" Name="Bouton poussoir 2" IsActive="true" RefId="CH-1874152011" />
+                  <ChannelInstance Id="P-0930-0_DI-9_CI-12" Name="Sonde de température interne" IsActive="true" RefId="CH-711352597" />
+                  <ChannelInstance Id="P-0930-0_DI-9_CI-13" Name="Informations" IsActive="true" RefId="CH-1297404556" />
+                  <ChannelInstance Id="P-0930-0_DI-9_CI-19" Name="Bouton poussoir 3" IsActive="true" RefId="CH-1" />
+                  <ChannelInstance Id="P-0930-0_DI-9_CI-20" Name="Bouton poussoir 4" IsActive="true" RefId="CH-2" />
+                  <ChannelInstance Id="P-0930-0_DI-9_CI-22" Name="Bouton poussoir 5" IsActive="true" RefId="CH-4" />
+                  <ChannelInstance Id="P-0930-0_DI-9_CI-23" Name="Bouton poussoir 6" IsActive="true" RefId="CH-5" />
+                </ChannelInstances>
+                <GroupObjectTree GroupObjectInstances="O-4_R-691479710 O-6_R-858138322 O-5_R-982098703 O-118_R-321 O-113_R-310 O-98_R-229 O-93_R-203 O-132_R-1324979835">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-486183250" Text="Général" GroupObjectInstances="O-4_R-691479710" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="Gestion des LED" GroupObjectInstances="O-6_R-858138322 O-5_R-982098703" />
+                    <Node Type="Channel" RefId="CH-1470867484" Text="Bouton poussoir 1" />
+                    <Node Type="Channel" RefId="CH-1874152011" Text="Bouton poussoir 2" />
+                    <Node Type="Channel" RefId="CH-711352597" Text="Sonde de température interne" GroupObjectInstances="O-132_R-1324979835" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Informations" />
+                    <Node Type="Channel" RefId="CH-1" Text="Bouton poussoir 3" GroupObjectInstances="O-58_R-41 O-61_R-53 O-53_R-25" />
+                    <Node Type="Channel" RefId="CH-2" Text="Bouton poussoir 4" GroupObjectInstances="O-78_R-130 O-81_R-135 O-73_R-119" />
+                    <Node Type="Channel" RefId="CH-4" Text="Bouton poussoir 5" GroupObjectInstances="O-98_R-229 O-93_R-203" />
+                    <Node Type="Channel" RefId="CH-5" Text="Bouton poussoir 6" GroupObjectInstances="O-118_R-321 O-113_R-310" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:02:39.7968232Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-13" Address="62" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_P-WST3xx" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_HP-E05E-11-E2C3" Comment="" Description="sam bv" SerialNumber="AAlAFVFD" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T10:44:36.575568Z" LastDownload="2020-12-28T17:01:43.5969953Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" UniqueId="{AF1E21E1-9F16-4170-8237-D82C0F39EF3B}" Puid="233">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1332_R-840" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-531857694_R-531857694" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-982276810_R-982277151" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-33_R-50" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1085561504_R-1085561504" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-37_R-67" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1173490589_R-1173490589" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1378431638_R-1378431638" Value="1" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-18_R-1636231488" ChannelId="CH-1470867484" Links="GA-17" />
+                  <ComObjectInstanceRef RefId="O-13_R-173361915" ChannelId="CH-1470867484" Links="GA-18" />
+                  <ComObjectInstanceRef RefId="O-132_R-1324979835" ChannelId="CH-711352597" Links="GA-86" />
+                </ComObjectInstanceRefs>
+                <ChannelInstances>
+                  <ChannelInstance Id="P-0930-0_DI-13_CI-1" Name="Général" IsActive="true" RefId="CH-486183250" />
+                  <ChannelInstance Id="P-0930-0_DI-13_CI-2" Name="Gestion des LED" IsActive="true" RefId="CH-889467777" />
+                  <ChannelInstance Id="P-0930-0_DI-13_CI-3" Name="Bouton poussoir 1" IsActive="true" RefId="CH-1470867484" />
+                  <ChannelInstance Id="P-0930-0_DI-13_CI-4" Name="Bouton poussoir 2" IsActive="true" RefId="CH-1874152011" />
+                  <ChannelInstance Id="P-0930-0_DI-13_CI-12" Name="Sonde de température interne" IsActive="true" RefId="CH-711352597" />
+                  <ChannelInstance Id="P-0930-0_DI-13_CI-13" Name="Informations" IsActive="true" RefId="CH-1297404556" />
+                  <ChannelInstance Id="P-0930-0_DI-13_CI-19" Name="Bouton poussoir 3" IsActive="true" RefId="CH-1" />
+                  <ChannelInstance Id="P-0930-0_DI-13_CI-20" Name="Bouton poussoir 4" IsActive="true" RefId="CH-2" />
+                  <ChannelInstance Id="P-0930-0_DI-13_CI-22" Name="Bouton poussoir 5" IsActive="true" RefId="CH-4" />
+                  <ChannelInstance Id="P-0930-0_DI-13_CI-23" Name="Bouton poussoir 6" IsActive="true" RefId="CH-5" />
+                </ChannelInstances>
+                <GroupObjectTree GroupObjectInstances="O-4_R-691479710 O-6_R-858138322 O-5_R-982098703 O-18_R-1636231488 O-13_R-173361915 O-132_R-1324979835">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-486183250" Text="Général" GroupObjectInstances="O-4_R-691479710" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="Gestion des LED" GroupObjectInstances="O-6_R-858138322 O-5_R-982098703" />
+                    <Node Type="Channel" RefId="CH-1470867484" Text="Bouton poussoir 1" GroupObjectInstances="O-18_R-1636231488 O-13_R-173361915" />
+                    <Node Type="Channel" RefId="CH-1874152011" Text="Bouton poussoir 2" />
+                    <Node Type="Channel" RefId="CH-711352597" Text="Sonde de température interne" GroupObjectInstances="O-132_R-1324979835" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Informations" />
+                    <Node Type="Channel" RefId="CH-1" Text="Bouton poussoir 3" />
+                    <Node Type="Channel" RefId="CH-2" Text="Bouton poussoir 4" />
+                    <Node Type="Channel" RefId="CH-4" Text="Bouton poussoir 5" />
+                    <Node Type="Channel" RefId="CH-5" Text="Bouton poussoir 6" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:01:43.6049972Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-21" Address="9" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20TXM620D-1_P-TXM620D" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20TXM620D-1_HP-20B1-10-9904" Comment="" Description="Mod20ETA" SerialNumber="AAlAE3/K" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-28T17:20:08.6071603Z" LastDownload="2020-12-28T17:22:53.0187145Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" UniqueId="{17963F0F-6FB2-4C29-954F-01A2A4AAD6B0}" Puid="245">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-20B1-10-9904_P-604640839_R-604640839" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-20B1-10-9904_P-1973_R-2613" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-20B1-10-9904_P-1972_R-2612" Value="8" />
+                  <ParameterInstanceRef RefId="M-0009_A-20B1-10-9904_P-1358789427_R-2611" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-20B1-10-9904_P-922573404_R-922573404" Value="15" />
+                  <ParameterInstanceRef RefId="M-0009_A-20B1-10-9904_P-397006543_R-397006543" Value="10" />
+                  <ParameterInstanceRef RefId="M-0009_A-20B1-10-9904_P-1358789427_R-1375" Value="1" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-0_R-1636231488" Description="Buanderie (plaf)" ChannelId="CH-486183250" Links="GA-28 GA-113 GA-124" />
+                  <ComObjectInstanceRef RefId="O-1_R-173361915" Description="Buanderie (plaf)" ChannelId="CH-486183250" Links="GA-29" />
+                  <ComObjectInstanceRef RefId="O-20_R-1" Description="cusine (table)" ChannelId="CH-1" Links="GA-12 GA-16 GA-113 GA-124" />
+                  <ComObjectInstanceRef RefId="O-21_R-2" Description="cusine (table)" ChannelId="CH-1" Links="GA-13" />
+                  <ComObjectInstanceRef RefId="O-30_R-11" Description="Salle à manger (plaf)" ChannelId="CH-2" Links="GA-17 GA-113 GA-124" />
+                  <ComObjectInstanceRef RefId="O-31_R-12" Description="Salle à manger (plaf)" ChannelId="CH-2" Links="GA-18" />
+                  <ComObjectInstanceRef RefId="O-40_R-40" Description="Salle à manger (app)" ChannelId="CH-4" Links="GA-19 GA-113 GA-124" />
+                  <ComObjectInstanceRef RefId="O-41_R-41" Description="Salle à manger (app)" ChannelId="CH-4" Links="GA-20" />
+                  <ComObjectInstanceRef RefId="O-50_R-50" Description="Bureau (plaf)" ChannelId="CH-5" Links="GA-34 GA-113 GA-124" />
+                  <ComObjectInstanceRef RefId="O-51_R-51" Description="Bureau (plaf)" ChannelId="CH-5" Links="GA-35" />
+                  <ComObjectInstanceRef RefId="O-60_R-79" Description="Salon (plaf)" ChannelId="CH-7" Links="GA-7 GA-113 GA-124" />
+                  <ComObjectInstanceRef RefId="O-61_R-80" Description="Salon (plaf)" ChannelId="CH-7" Links="GA-8" />
+                  <ComObjectInstanceRef RefId="O-70_R-89" Description="Hall REZ (app)" ChannelId="CH-8" Links="GA-24 GA-113 GA-124" />
+                  <ComObjectInstanceRef RefId="O-71_R-90" Description="Hall REZ (app)" ChannelId="CH-8" Links="GA-25" />
+                  <ComObjectInstanceRef RefId="O-80_R-118" Description="Grenier aménageable (plaf)" ChannelId="CH-10" Links="GA-63 GA-114 GA-124" />
+                  <ComObjectInstanceRef RefId="O-81_R-119" Description="Grenier aménageable (plaf)" ChannelId="CH-10" Links="GA-64" />
+                  <ComObjectInstanceRef RefId="O-90_R-128" Description="Prise salle de bain" ChannelId="CH-11" Links="GA-100 GA-58" />
+                  <ComObjectInstanceRef RefId="O-91_R-129" Description="Prise salle de bain" ChannelId="CH-11" Links="GA-101" />
+                  <ComObjectInstanceRef RefId="O-100_R-157" Description="Escalier (app)" ChannelId="CH-13" Links="GA-124" />
+                  <ComObjectInstanceRef RefId="O-101_R-158" Description="Escalier (app)" ChannelId="CH-13" />
+                  <ComObjectInstanceRef RefId="O-110_R-167" Description="Cellier (plaf)" ChannelId="CH-14" Links="GA-26 GA-113 GA-124" />
+                  <ComObjectInstanceRef RefId="O-111_R-168" Description="Cellier (plaf)" ChannelId="CH-14" Links="GA-27" />
+                  <ComObjectInstanceRef RefId="O-120_R-196" Description="Vestiaire (plaf)" ChannelId="CH-16" Links="GA-38 GA-113 GA-124" />
+                  <ComObjectInstanceRef RefId="O-121_R-197" Description="Vestiaire (plaf)" ChannelId="CH-16" Links="GA-39" />
+                  <ComObjectInstanceRef RefId="O-130_R-206" Description="WC REZ (plaf)" ChannelId="CH-17" Links="GA-22 GA-113 GA-124" />
+                  <ComObjectInstanceRef RefId="O-131_R-207" Description="WC REZ (plaf)" ChannelId="CH-17" Links="GA-23" />
+                  <ComObjectInstanceRef RefId="O-140_R-235" Description="Couloir gar (plaf)" ChannelId="CH-19" Links="GA-36 GA-113 GA-124" />
+                  <ComObjectInstanceRef RefId="O-141_R-236" Description="Couloir gar (plaf)" ChannelId="CH-19" Links="GA-37" />
+                  <ComObjectInstanceRef RefId="O-150_R-245" Description="Phare ext devant (porte)" ChannelId="CH-20" Links="GA-78" />
+                  <ComObjectInstanceRef RefId="O-151_R-246" Description="Phare ext devant (porte)" ChannelId="CH-20" Links="GA-79" />
+                  <ComObjectInstanceRef RefId="O-2_R-1033624301" ChannelId="CH-486183250" Links="GA-102" />
+                  <ComObjectInstanceRef RefId="O-112_R-169" ChannelId="CH-14" Links="GA-112" />
+                  <ComObjectInstanceRef RefId="O-72_R-91" ChannelId="CH-8" Links="GA-111" />
+                </ComObjectInstanceRefs>
+                <ChannelInstances>
+                  <ChannelInstance Id="P-0930-0_DI-21_CI-1" Name="Sortie 1" IsActive="true" RefId="CH-486183250" />
+                  <ChannelInstance Id="P-0930-0_DI-21_CI-2" Name="Sortie 2" IsActive="true" RefId="CH-889467777" />
+                  <ChannelInstance Id="P-0930-0_DI-21_CI-4" Name="Sortie 3" IsActive="true" RefId="CH-1" />
+                  <ChannelInstance Id="P-0930-0_DI-21_CI-5" Name="Sortie 4" IsActive="true" RefId="CH-2" />
+                  <ChannelInstance Id="P-0930-0_DI-21_CI-7" Name="Sortie 5" IsActive="true" RefId="CH-4" />
+                  <ChannelInstance Id="P-0930-0_DI-21_CI-8" Name="Sortie 6" IsActive="true" RefId="CH-5" />
+                  <ChannelInstance Id="P-0930-0_DI-21_CI-10" Name="Sortie 7" IsActive="true" RefId="CH-7" />
+                  <ChannelInstance Id="P-0930-0_DI-21_CI-11" Name="Sortie 8" IsActive="true" RefId="CH-8" />
+                  <ChannelInstance Id="P-0930-0_DI-21_CI-13" Name="Sortie 9" IsActive="true" RefId="CH-10" />
+                  <ChannelInstance Id="P-0930-0_DI-21_CI-14" Name="Sortie 10" IsActive="true" RefId="CH-11" />
+                  <ChannelInstance Id="P-0930-0_DI-21_CI-16" Name="Sortie 11" IsActive="true" RefId="CH-13" />
+                  <ChannelInstance Id="P-0930-0_DI-21_CI-17" Name="Sortie 12" IsActive="true" RefId="CH-14" />
+                  <ChannelInstance Id="P-0930-0_DI-21_CI-19" Name="Sortie 13" IsActive="true" RefId="CH-16" />
+                  <ChannelInstance Id="P-0930-0_DI-21_CI-20" Name="Sortie 14" IsActive="true" RefId="CH-17" />
+                  <ChannelInstance Id="P-0930-0_DI-21_CI-22" Name="Sortie 15" IsActive="true" RefId="CH-19" />
+                  <ChannelInstance Id="P-0930-0_DI-21_CI-23" Name="Sortie 16" IsActive="true" RefId="CH-20" />
+                  <ChannelInstance Id="P-0930-0_DI-21_CI-25" Name="Sortie 17" IsActive="true" RefId="CH-22" />
+                  <ChannelInstance Id="P-0930-0_DI-21_CI-26" Name="Sortie 18" IsActive="true" RefId="CH-23" />
+                  <ChannelInstance Id="P-0930-0_DI-21_CI-28" Name="Sortie 19" IsActive="true" RefId="CH-25" />
+                  <ChannelInstance Id="P-0930-0_DI-21_CI-29" Name="Sortie 20" IsActive="true" RefId="CH-26" />
+                  <ChannelInstance Id="P-0930-0_DI-21_CI-31" Name="Informations" IsActive="true" RefId="CH-1297404556" />
+                </ChannelInstances>
+                <GroupObjectTree GroupObjectInstances="O-0_R-1636231488 O-1_R-173361915 O-10_R-1636231489 O-11_R-173361916 O-20_R-1 O-21_R-2 O-30_R-11 O-31_R-12 O-40_R-40 O-41_R-41 O-50_R-50 O-51_R-51 O-60_R-79 O-61_R-80 O-70_R-89 O-71_R-90 O-80_R-118 O-81_R-119 O-90_R-128 O-91_R-129 O-100_R-157 O-101_R-158 O-110_R-167 O-111_R-168 O-120_R-196 O-121_R-197 O-130_R-206 O-131_R-207 O-140_R-235 O-141_R-236 O-150_R-245 O-151_R-246 O-160_R-274 O-161_R-275 O-170_R-284 O-171_R-285 O-180_R-313 O-181_R-314 O-190_R-323 O-191_R-324 O-2_R-1033624301">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-486183250" Text="Sortie 1" GroupObjectInstances="O-0_R-1636231488 O-1_R-173361915 O-2_R-1033624301" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="Sortie 2" GroupObjectInstances="O-10_R-1636231489 O-11_R-173361916" />
+                    <Node Type="Channel" RefId="CH-1" Text="Sortie 3" GroupObjectInstances="O-20_R-1 O-21_R-2" />
+                    <Node Type="Channel" RefId="CH-2" Text="Sortie 4" GroupObjectInstances="O-30_R-11 O-31_R-12" />
+                    <Node Type="Channel" RefId="CH-4" Text="Sortie 5" GroupObjectInstances="O-40_R-40 O-41_R-41" />
+                    <Node Type="Channel" RefId="CH-5" Text="Sortie 6" GroupObjectInstances="O-50_R-50 O-51_R-51" />
+                    <Node Type="Channel" RefId="CH-7" Text="Sortie 7" GroupObjectInstances="O-60_R-79 O-61_R-80" />
+                    <Node Type="Channel" RefId="CH-8" Text="Sortie 8" GroupObjectInstances="O-70_R-89 O-71_R-90 O-72_R-91" />
+                    <Node Type="Channel" RefId="CH-10" Text="Sortie 9" GroupObjectInstances="O-80_R-118 O-81_R-119" />
+                    <Node Type="Channel" RefId="CH-11" Text="Sortie 10" GroupObjectInstances="O-90_R-128 O-91_R-129" />
+                    <Node Type="Channel" RefId="CH-13" Text="Sortie 11" GroupObjectInstances="O-100_R-157 O-101_R-158" />
+                    <Node Type="Channel" RefId="CH-14" Text="Sortie 12" GroupObjectInstances="O-110_R-167 O-111_R-168 O-112_R-169" />
+                    <Node Type="Channel" RefId="CH-16" Text="Sortie 13" GroupObjectInstances="O-120_R-196 O-121_R-197" />
+                    <Node Type="Channel" RefId="CH-17" Text="Sortie 14" GroupObjectInstances="O-130_R-206 O-131_R-207" />
+                    <Node Type="Channel" RefId="CH-19" Text="Sortie 15" GroupObjectInstances="O-140_R-235 O-141_R-236" />
+                    <Node Type="Channel" RefId="CH-20" Text="Sortie 16" GroupObjectInstances="O-150_R-245 O-151_R-246" />
+                    <Node Type="Channel" RefId="CH-22" Text="Sortie 17" GroupObjectInstances="O-160_R-274 O-161_R-275" />
+                    <Node Type="Channel" RefId="CH-23" Text="Sortie 18" GroupObjectInstances="O-170_R-284 O-171_R-285" />
+                    <Node Type="Channel" RefId="CH-25" Text="Sortie 19" GroupObjectInstances="O-180_R-313 O-181_R-314" />
+                    <Node Type="Channel" RefId="CH-26" Text="Sortie 20" GroupObjectInstances="O-190_R-323 O-191_R-324" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Informations" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:22:53.0577234Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-22" Address="4" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20TXM620D-1_P-TXM620D" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20TXM620D-1_HP-20B1-10-9904" Comment="" Description="Mod20GRE" SerialNumber="AAlAE3//" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-10-13T05:00:22.4498564Z" LastDownload="2020-12-28T17:00:27.1375382Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" UniqueId="{455DD683-29FE-4986-91E2-2422E2765EB7}" Puid="246">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-20B1-10-9904_P-1841_R-2473" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-20B1-10-9904_P-2301_R-3091" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-20B1-10-9904_P-2761_R-3709" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-20B1-10-9904_P-3221_R-4327" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-20B1-10-9904_P-604640839_R-4946" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-20B1-10-9904_P-315367816_R-2758" Value="1" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-0_R-1636231488" Description="Chambre 2 (plaf)" ChannelId="CH-486183250" Links="GA-46 GA-114 GA-124" />
+                  <ComObjectInstanceRef RefId="O-1_R-173361915" Description="Chambre 2 (plaf)" ChannelId="CH-486183250" Links="GA-47" />
+                  <ComObjectInstanceRef RefId="O-10_R-1636231489" Description="Chambre 1 (plaf)" ChannelId="CH-889467777" Links="GA-44 GA-114 GA-124" />
+                  <ComObjectInstanceRef RefId="O-11_R-173361916" Description="Chambre 1 (plaf)" ChannelId="CH-889467777" Links="GA-45" />
+                  <ComObjectInstanceRef RefId="O-20_R-1" Description="WC ETA (plaf)" ChannelId="CH-1" Links="GA-40 GA-114 GA-124" />
+                  <ComObjectInstanceRef RefId="O-21_R-2" Description="WC ETA (plaf)" ChannelId="CH-1" Links="GA-41" />
+                  <ComObjectInstanceRef RefId="O-30_R-11" Description="Dressing (plaf)" ChannelId="CH-2" Links="GA-65 GA-114 GA-124" />
+                  <ComObjectInstanceRef RefId="O-31_R-12" Description="Dressing (plaf)" ChannelId="CH-2" Links="GA-66" />
+                  <ComObjectInstanceRef RefId="O-40_R-40" Description="Salle de bain (plaf)" ChannelId="CH-4" Links="GA-52 GA-58 GA-114 GA-124" />
+                  <ComObjectInstanceRef RefId="O-41_R-41" Description="Salle de bain (plaf)" ChannelId="CH-4" Links="GA-53" />
+                  <ComObjectInstanceRef RefId="O-50_R-50" Description="Chambre 3 (plaf)" ChannelId="CH-5" Links="GA-42 GA-114 GA-124" />
+                  <ComObjectInstanceRef RefId="O-51_R-51" Description="Chambre 3 (plaf)" ChannelId="CH-5" Links="GA-43" />
+                  <ComObjectInstanceRef RefId="O-100_R-157" Description="Chambre 2 (v)" />
+                  <ComObjectInstanceRef RefId="O-101_R-158" Description="Chambre 2 (v)" />
+                  <ComObjectInstanceRef RefId="O-110_R-167" Description="Chambre 2 (v)" />
+                  <ComObjectInstanceRef RefId="O-111_R-168" Description="Chambre 2 (v)" />
+                  <ComObjectInstanceRef RefId="O-120_R-196" Description="Chambre 3 (v)" />
+                  <ComObjectInstanceRef RefId="O-121_R-197" Description="Chambre 3 (v)" />
+                  <ComObjectInstanceRef RefId="O-130_R-206" Description="Chambre 3 (v)" />
+                  <ComObjectInstanceRef RefId="O-131_R-207" Description="Chambre 3 (v)" />
+                  <ComObjectInstanceRef RefId="O-140_R-235" Description="Chambre 1 (v)" />
+                  <ComObjectInstanceRef RefId="O-141_R-236" Description="Chambre 1 (v)" />
+                  <ComObjectInstanceRef RefId="O-150_R-245" Description="Chambre 1 (v)" />
+                  <ComObjectInstanceRef RefId="O-151_R-246" Description="Chambre 1 (v)" />
+                  <ComObjectInstanceRef RefId="O-180_R-313" Description="Hall ETA (app)" ChannelId="CH-25" Links="GA-61 GA-114 GA-124" />
+                  <ComObjectInstanceRef RefId="O-181_R-314" Description="Hall ETA (app)" ChannelId="CH-25" Links="GA-62" />
+                  <ComObjectInstanceRef RefId="O-190_R-323" Description="Grenier" ChannelId="CH-26" Links="GA-67 GA-115 GA-124" />
+                  <ComObjectInstanceRef RefId="O-191_R-324" Description="Grenier" ChannelId="CH-26" Links="GA-68" />
+                  <ComObjectInstanceRef RefId="O-182_R-315" ChannelId="CH-25" Links="GA-103" />
+                </ComObjectInstanceRefs>
+                <ChannelInstances>
+                  <ChannelInstance Id="P-0930-0_DI-22_CI-18" Name="Sorties 11-12" IsActive="true" RefId="CH-15" />
+                  <ChannelInstance Id="P-0930-0_DI-22_CI-21" Name="Sorties 13-14" IsActive="true" RefId="CH-18" />
+                  <ChannelInstance Id="P-0930-0_DI-22_CI-24" Name="Sorties 15-16" IsActive="true" RefId="CH-21" />
+                  <ChannelInstance Id="P-0930-0_DI-22_CI-25" Name="Sortie 1" IsActive="true" RefId="CH-486183250" />
+                  <ChannelInstance Id="P-0930-0_DI-22_CI-26" Name="Sortie 2" IsActive="true" RefId="CH-889467777" />
+                  <ChannelInstance Id="P-0930-0_DI-22_CI-28" Name="Sortie 3" IsActive="true" RefId="CH-1" />
+                  <ChannelInstance Id="P-0930-0_DI-22_CI-29" Name="Sortie 4" IsActive="true" RefId="CH-2" />
+                  <ChannelInstance Id="P-0930-0_DI-22_CI-31" Name="Sortie 5" IsActive="true" RefId="CH-4" />
+                  <ChannelInstance Id="P-0930-0_DI-22_CI-32" Name="Sortie 6" IsActive="true" RefId="CH-5" />
+                  <ChannelInstance Id="P-0930-0_DI-22_CI-34" Name="Sortie 7" IsActive="true" RefId="CH-7" />
+                  <ChannelInstance Id="P-0930-0_DI-22_CI-35" Name="Sortie 8" IsActive="true" RefId="CH-8" />
+                  <ChannelInstance Id="P-0930-0_DI-22_CI-37" Name="Sortie 9" IsActive="true" RefId="CH-10" />
+                  <ChannelInstance Id="P-0930-0_DI-22_CI-38" Name="Sortie 10" IsActive="true" RefId="CH-11" />
+                  <ChannelInstance Id="P-0930-0_DI-22_CI-52" Name="Sortie 19" IsActive="true" RefId="CH-25" />
+                  <ChannelInstance Id="P-0930-0_DI-22_CI-53" Name="Sortie 20" IsActive="true" RefId="CH-26" />
+                  <ChannelInstance Id="P-0930-0_DI-22_CI-55" Name="Informations" IsActive="true" RefId="CH-1297404556" />
+                  <ChannelInstance Id="P-0930-0_DI-22_CI-82" Name="Sorties 17-18" IsActive="true" RefId="CH-24" />
+                </ChannelInstances>
+                <GroupObjectTree GroupObjectInstances="O-0_R-1636231488 O-1_R-173361915 O-10_R-1636231489 O-11_R-173361916 O-20_R-1 O-21_R-2 O-30_R-11 O-31_R-12 O-40_R-40 O-41_R-41 O-50_R-50 O-51_R-51 O-60_R-79 O-61_R-80 O-70_R-89 O-71_R-90 O-80_R-118 O-81_R-119 O-90_R-128 O-91_R-129 O-180_R-313 O-181_R-314 O-190_R-323 O-191_R-324 O-100_R-177 O-101_R-178 O-102_R-179 O-103_R-180 O-104_R-181 O-105_R-182 O-106_R-183 O-120_R-216 O-121_R-217 O-122_R-218 O-123_R-219 O-124_R-220 O-125_R-221 O-126_R-222 O-140_R-255 O-141_R-256 O-142_R-257 O-143_R-258 O-144_R-259 O-145_R-260 O-146_R-261 O-160_R-294 O-161_R-295 O-162_R-296 O-163_R-297 O-164_R-298 O-165_R-299 O-166_R-300">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-15" Text="Sorties 11-12" GroupObjectInstances="O-100_R-177 O-101_R-178 O-102_R-179 O-103_R-180 O-104_R-181 O-105_R-182 O-106_R-183 O-114_R-191 O-112_R-189 O-113_R-190" />
+                    <Node Type="Channel" RefId="CH-18" Text="Sorties 13-14" GroupObjectInstances="O-120_R-216 O-121_R-217 O-122_R-218 O-123_R-219 O-124_R-220 O-125_R-221 O-126_R-222" />
+                    <Node Type="Channel" RefId="CH-21" Text="Sorties 15-16" GroupObjectInstances="O-140_R-255 O-141_R-256 O-142_R-257 O-143_R-258 O-144_R-259 O-145_R-260 O-146_R-261" />
+                    <Node Type="Channel" RefId="CH-486183250" Text="Sortie 1" GroupObjectInstances="O-0_R-1636231488 O-1_R-173361915" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="Sortie 2" GroupObjectInstances="O-10_R-1636231489 O-11_R-173361916" />
+                    <Node Type="Channel" RefId="CH-1" Text="Sortie 3" GroupObjectInstances="O-20_R-1 O-21_R-2" />
+                    <Node Type="Channel" RefId="CH-2" Text="Sortie 4" GroupObjectInstances="O-30_R-11 O-31_R-12" />
+                    <Node Type="Channel" RefId="CH-4" Text="Sortie 5" GroupObjectInstances="O-40_R-40 O-41_R-41" />
+                    <Node Type="Channel" RefId="CH-5" Text="Sortie 6" GroupObjectInstances="O-50_R-50 O-51_R-51" />
+                    <Node Type="Channel" RefId="CH-7" Text="Sortie 7" GroupObjectInstances="O-60_R-79 O-61_R-80" />
+                    <Node Type="Channel" RefId="CH-8" Text="Sortie 8" GroupObjectInstances="O-70_R-89 O-71_R-90" />
+                    <Node Type="Channel" RefId="CH-10" Text="Sortie 9" GroupObjectInstances="O-80_R-118 O-81_R-119" />
+                    <Node Type="Channel" RefId="CH-11" Text="Sortie 10" GroupObjectInstances="O-90_R-128 O-91_R-129" />
+                    <Node Type="Channel" RefId="CH-25" Text="Sortie 19" GroupObjectInstances="O-180_R-313 O-181_R-314 O-182_R-315" />
+                    <Node Type="Channel" RefId="CH-26" Text="Sortie 20" GroupObjectInstances="O-190_R-323 O-191_R-324" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Informations" />
+                    <Node Type="Channel" RefId="CH-24" Text="Sorties 17-18" GroupObjectInstances="O-160_R-294 O-161_R-295 O-162_R-296 O-163_R-297 O-164_R-298 O-165_R-299 O-166_R-300" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:00:27.1455393Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-25" Address="2" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20TXA663A-1_P-TXA663A" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20TXA663A-1_HP-20B8-10-638A" Comment="" Description="Mod3x300ETA" SerialNumber="AAlADvk4" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T10:01:15.4292792Z" LastDownload="2020-12-28T17:00:09.8229747Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" UniqueId="{0AB262BB-7189-4A96-BDA9-1B23C29270AB}" Puid="249">
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-0_R-1636231488" Description="App SDB (droite)" ChannelId="CH-507609925" Links="GA-54 GA-58 GA-114 GA-124" />
+                  <ComObjectInstanceRef RefId="O-1_R-635523827" Description="App SDB (droite)" ChannelId="CH-507609925" Links="GA-56" />
+                  <ComObjectInstanceRef RefId="O-2_R-764252235" Description="App SDB (droite)" ChannelId="CH-507609925" Links="GA-57" />
+                  <ComObjectInstanceRef RefId="O-8_R-173361915" Description="App SDB (droite)" ChannelId="CH-507609925" Links="GA-55" />
+                  <ComObjectInstanceRef RefId="O-9_R-1869315505" Description="App SDB (droite)" ChannelId="CH-507609925" Links="GA-98" />
+                  <ComObjectInstanceRef RefId="O-3_R-1466032931" Description="App SDB (droite)" ChannelId="CH-507609925" />
+                  <ComObjectInstanceRef RefId="O-14_R-1" Description="App SDB (gauche)" ChannelId="CH-1089009632" Links="GA-48 GA-58 GA-114 GA-124" />
+                  <ComObjectInstanceRef RefId="O-15_R-2" Description="App SDB (gauche)" ChannelId="CH-1089009632" Links="GA-50" />
+                  <ComObjectInstanceRef RefId="O-16_R-3" Description="App SDB (gauche)" ChannelId="CH-1089009632" Links="GA-51" />
+                  <ComObjectInstanceRef RefId="O-22_R-9" Description="App SDB (gauche)" ChannelId="CH-1089009632" Links="GA-49" />
+                  <ComObjectInstanceRef RefId="O-23_R-10" Description="App SDB (gauche)" ChannelId="CH-1089009632" Links="GA-97" />
+                  <ComObjectInstanceRef RefId="O-17_R-4" Description="App SDB (gauche)" ChannelId="CH-1089009632" />
+                  <ComObjectInstanceRef RefId="O-28_R-15" Description="App Salon" ChannelId="CH-1670409339" Links="GA-1 GA-113 GA-124" />
+                  <ComObjectInstanceRef RefId="O-29_R-16" Description="App Salon" ChannelId="CH-1670409339" Links="GA-3" />
+                  <ComObjectInstanceRef RefId="O-30_R-17" Description="App Salon" ChannelId="CH-1670409339" Links="GA-4" />
+                  <ComObjectInstanceRef RefId="O-36_R-23" Description="App Salon" ChannelId="CH-1670409339" Links="GA-2" />
+                  <ComObjectInstanceRef RefId="O-37_R-24" Description="App Salon" ChannelId="CH-1670409339" Links="GA-96" />
+                  <ComObjectInstanceRef RefId="O-31_R-18" Description="App Salon" ChannelId="CH-1670409339" />
+                </ComObjectInstanceRefs>
+                <ChannelInstances>
+                  <ChannelInstance Id="P-0930-0_DI-25_CI-1" Name="Sortie 1" IsActive="true" RefId="CH-507609925" />
+                  <ChannelInstance Id="P-0930-0_DI-25_CI-2" Name="Sortie 2" IsActive="true" RefId="CH-1089009632" />
+                  <ChannelInstance Id="P-0930-0_DI-25_CI-3" Name="Sortie 3" IsActive="true" RefId="CH-1670409339" />
+                  <ChannelInstance Id="P-0930-0_DI-25_CI-4" Name="Informations" IsActive="true" RefId="CH-1297404556" />
+                </ChannelInstances>
+                <GroupObjectTree GroupObjectInstances="O-0_R-1636231488 O-1_R-635523827 O-2_R-764252235 O-8_R-173361915 O-9_R-1869315505 O-3_R-1466032931 O-14_R-1 O-15_R-2 O-16_R-3 O-22_R-9 O-23_R-10 O-17_R-4 O-28_R-15 O-29_R-16 O-30_R-17 O-36_R-23 O-37_R-24 O-31_R-18">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-507609925" Text="Sortie 1" GroupObjectInstances="O-0_R-1636231488 O-1_R-635523827 O-2_R-764252235 O-8_R-173361915 O-9_R-1869315505 O-3_R-1466032931" />
+                    <Node Type="Channel" RefId="CH-1089009632" Text="Sortie 2" GroupObjectInstances="O-14_R-1 O-15_R-2 O-16_R-3 O-22_R-9 O-23_R-10 O-17_R-4" />
+                    <Node Type="Channel" RefId="CH-1670409339" Text="Sortie 3" GroupObjectInstances="O-28_R-15 O-29_R-16 O-30_R-17 O-36_R-23 O-37_R-24 O-31_R-18" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Informations" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:00:09.8330159Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-29" Address="63" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_P-WST3xx" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_HP-E05E-11-E2C3" Comment="" Description="sdb vg" SerialNumber="AAlAFVEV" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-28T17:17:19.2159865Z" LastDownload="2020-12-28T17:19:10.8957545Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" UniqueId="{EE928F92-F25F-4DC8-88ED-52CA41CA00DF}" Puid="253">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1332_R-840" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-715_R-3541" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-713_R-3197" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-33_R-50" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1085561504_R-1085561504" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-103_R-520" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-542" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-570" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-1087" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-1090" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-242_R-1192" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-569" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-323_R-1385" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-332_R-1448" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-353_R-1383" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1587" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1591" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1833" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1836" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-460_R-2086" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-472_R-2148" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-381_R-1924" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1589" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-893_R-3839" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-926_R-3901" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1378431638_R-1378431638" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-952_R-3928" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-954_R-4285" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1101_R-4538" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-1117_R-4598" Value="6" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-1125_R-4600" Value="5" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-93_R-203" ChannelId="CH-4" Links="GA-53" />
+                  <ComObjectInstanceRef RefId="O-98_R-229" ChannelId="CH-4" Links="GA-52" />
+                  <ComObjectInstanceRef RefId="O-58_R-41" ChannelId="CH-1" Links="GA-48" />
+                  <ComObjectInstanceRef RefId="O-61_R-53" ChannelId="CH-1" Links="GA-50" />
+                  <ComObjectInstanceRef RefId="O-53_R-25" ChannelId="CH-1" Links="GA-49" />
+                  <ComObjectInstanceRef RefId="O-78_R-130" ChannelId="CH-2" Links="GA-48" />
+                  <ComObjectInstanceRef RefId="O-81_R-135" ChannelId="CH-2" Links="GA-50" />
+                  <ComObjectInstanceRef RefId="O-73_R-119" ChannelId="CH-2" Links="GA-49" />
+                  <ComObjectInstanceRef RefId="O-132_R-1324979835" ChannelId="CH-711352597" Links="GA-95" />
+                  <ComObjectInstanceRef RefId="O-118_R-321" ChannelId="CH-5" Links="GA-100" />
+                  <ComObjectInstanceRef RefId="O-113_R-310" ChannelId="CH-5" Links="GA-101" />
+                </ComObjectInstanceRefs>
+                <ChannelInstances>
+                  <ChannelInstance Id="P-0930-0_DI-29_CI-3" Name="Bouton poussoir 1" IsActive="true" RefId="CH-1470867484" />
+                  <ChannelInstance Id="P-0930-0_DI-29_CI-4" Name="Bouton poussoir 2" IsActive="true" RefId="CH-1874152011" />
+                  <ChannelInstance Id="P-0930-0_DI-29_CI-12" Name="Sonde de température interne" IsActive="true" RefId="CH-711352597" />
+                  <ChannelInstance Id="P-0930-0_DI-29_CI-13" Name="Informations" IsActive="true" RefId="CH-1297404556" />
+                  <ChannelInstance Id="P-0930-0_DI-29_CI-6" Name="Bouton poussoir 3" IsActive="true" RefId="CH-1" />
+                  <ChannelInstance Id="P-0930-0_DI-29_CI-7" Name="Bouton poussoir 4" IsActive="true" RefId="CH-2" />
+                  <ChannelInstance Id="P-0930-0_DI-29_CI-9" Name="Bouton poussoir 5" IsActive="true" RefId="CH-4" />
+                  <ChannelInstance Id="P-0930-0_DI-29_CI-10" Name="Bouton poussoir 6" IsActive="true" RefId="CH-5" />
+                  <ChannelInstance Id="P-0930-0_DI-29_CI-14" Name="Général" IsActive="true" RefId="CH-486183250" />
+                  <ChannelInstance Id="P-0930-0_DI-29_CI-15" Name="Gestion des LED" IsActive="true" RefId="CH-889467777" />
+                </ChannelInstances>
+                <GroupObjectTree GroupObjectInstances="O-4_R-691479710 O-6_R-858138322 O-5_R-982098703 O-93_R-203 O-98_R-229 O-58_R-41 O-61_R-53 O-53_R-25 O-78_R-130 O-81_R-135 O-73_R-119 O-132_R-1324979835">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-1470867484" Text="Bouton poussoir 1" />
+                    <Node Type="Channel" RefId="CH-1874152011" Text="Bouton poussoir 2" />
+                    <Node Type="Channel" RefId="CH-711352597" Text="Sonde de température interne" GroupObjectInstances="O-132_R-1324979835" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Informations" />
+                    <Node Type="Channel" RefId="CH-1" Text="Bouton poussoir 3" GroupObjectInstances="O-58_R-41 O-61_R-53 O-53_R-25" />
+                    <Node Type="Channel" RefId="CH-2" Text="Bouton poussoir 4" GroupObjectInstances="O-78_R-130 O-81_R-135 O-73_R-119" />
+                    <Node Type="Channel" RefId="CH-4" Text="Bouton poussoir 5" GroupObjectInstances="O-98_R-229 O-93_R-203" />
+                    <Node Type="Channel" RefId="CH-5" Text="Bouton poussoir 6" GroupObjectInstances="O-118_R-321 O-113_R-310" />
+                    <Node Type="Channel" RefId="CH-486183250" Text="Général" GroupObjectInstances="O-4_R-691479710" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="Gestion des LED" GroupObjectInstances="O-6_R-858138322 O-5_R-982098703" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:19:10.9517674Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-30" Address="64" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_P-WST3xx" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_HP-E05E-11-E2C3" Comment="" Description="sdb vd" SerialNumber="AAlAE0/E" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-28T17:17:32.9677815Z" LastDownload="2020-12-28T17:19:24.7544584Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" UniqueId="{E5112E11-292B-4ECA-B547-0B2F0C6766F5}" Puid="254">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1332_R-840" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-103_R-520" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1085561504_R-1085561504" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-33_R-50" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-713_R-3197" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-715_R-3541" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-542" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-570" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-1087" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-1090" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-242_R-1192" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-569" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-323_R-1385" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-332_R-1448" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-353_R-1383" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1587" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1591" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1833" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1836" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-381_R-1924" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1589" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-460_R-2086" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-472_R-2148" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-893_R-3839" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-926_R-3901" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1378431638_R-1378431638" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-952_R-3928" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-954_R-4285" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1101_R-4538" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-1117_R-4598" Value="6" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-1125_R-4600" Value="5" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-98_R-229" ChannelId="CH-4" Links="GA-52" />
+                  <ComObjectInstanceRef RefId="O-93_R-203" ChannelId="CH-4" Links="GA-53" />
+                  <ComObjectInstanceRef RefId="O-58_R-41" ChannelId="CH-1" Links="GA-54" />
+                  <ComObjectInstanceRef RefId="O-61_R-53" ChannelId="CH-1" Links="GA-56" />
+                  <ComObjectInstanceRef RefId="O-53_R-25" ChannelId="CH-1" Links="GA-55" />
+                  <ComObjectInstanceRef RefId="O-78_R-130" ChannelId="CH-2" Links="GA-54" />
+                  <ComObjectInstanceRef RefId="O-81_R-135" ChannelId="CH-2" Links="GA-56" />
+                  <ComObjectInstanceRef RefId="O-73_R-119" ChannelId="CH-2" Links="GA-55" />
+                  <ComObjectInstanceRef RefId="O-132_R-1324979835" ChannelId="CH-711352597" Links="GA-95" />
+                  <ComObjectInstanceRef RefId="O-118_R-321" ChannelId="CH-5" Links="GA-100" />
+                  <ComObjectInstanceRef RefId="O-113_R-310" ChannelId="CH-5" Links="GA-101" />
+                </ComObjectInstanceRefs>
+                <ChannelInstances>
+                  <ChannelInstance Id="P-0930-0_DI-30_CI-3" Name="Bouton poussoir 1" IsActive="true" RefId="CH-1470867484" />
+                  <ChannelInstance Id="P-0930-0_DI-30_CI-4" Name="Bouton poussoir 2" IsActive="true" RefId="CH-1874152011" />
+                  <ChannelInstance Id="P-0930-0_DI-30_CI-12" Name="Sonde de température interne" IsActive="true" RefId="CH-711352597" />
+                  <ChannelInstance Id="P-0930-0_DI-30_CI-13" Name="Informations" IsActive="true" RefId="CH-1297404556" />
+                  <ChannelInstance Id="P-0930-0_DI-30_CI-6" Name="Bouton poussoir 3" IsActive="true" RefId="CH-1" />
+                  <ChannelInstance Id="P-0930-0_DI-30_CI-7" Name="Bouton poussoir 4" IsActive="true" RefId="CH-2" />
+                  <ChannelInstance Id="P-0930-0_DI-30_CI-9" Name="Bouton poussoir 5" IsActive="true" RefId="CH-4" />
+                  <ChannelInstance Id="P-0930-0_DI-30_CI-10" Name="Bouton poussoir 6" IsActive="true" RefId="CH-5" />
+                  <ChannelInstance Id="P-0930-0_DI-30_CI-14" Name="Général" IsActive="true" RefId="CH-486183250" />
+                  <ChannelInstance Id="P-0930-0_DI-30_CI-15" Name="Gestion des LED" IsActive="true" RefId="CH-889467777" />
+                </ChannelInstances>
+                <GroupObjectTree GroupObjectInstances="O-4_R-691479710 O-6_R-858138322 O-5_R-982098703 O-98_R-229 O-93_R-203 O-58_R-41 O-61_R-53 O-53_R-25 O-78_R-130 O-81_R-135 O-73_R-119 O-132_R-1324979835">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-1470867484" Text="Bouton poussoir 1" />
+                    <Node Type="Channel" RefId="CH-1874152011" Text="Bouton poussoir 2" />
+                    <Node Type="Channel" RefId="CH-711352597" Text="Sonde de température interne" GroupObjectInstances="O-132_R-1324979835" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Informations" />
+                    <Node Type="Channel" RefId="CH-1" Text="Bouton poussoir 3" GroupObjectInstances="O-58_R-41 O-61_R-53 O-53_R-25" />
+                    <Node Type="Channel" RefId="CH-2" Text="Bouton poussoir 4" GroupObjectInstances="O-78_R-130 O-81_R-135 O-73_R-119" />
+                    <Node Type="Channel" RefId="CH-4" Text="Bouton poussoir 5" GroupObjectInstances="O-98_R-229 O-93_R-203" />
+                    <Node Type="Channel" RefId="CH-5" Text="Bouton poussoir 6" GroupObjectInstances="O-118_R-321 O-113_R-310" />
+                    <Node Type="Channel" RefId="CH-486183250" Text="Général" GroupObjectInstances="O-4_R-691479710" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="Gestion des LED" GroupObjectInstances="O-6_R-858138322 O-5_R-982098703" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:19:24.7894656Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-31" Address="65" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_P-WST3xx" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_HP-E05E-11-E2C3" Comment="" Description="sdb porte" SerialNumber="AAlAFlQW" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T10:02:50.706895Z" LastDownload="2020-12-28T17:02:25.5370849Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" UniqueId="{D56CCEA6-57C1-427A-A60F-C974515B740F}" Puid="255">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1332_R-840" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-531857694_R-531857694" Value="11" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-982276810_R-982276868" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-982276810_R-982276874" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-1603288898_R-1603288898" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-1603288899_R-1603288899" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-33_R-50" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-371008879_R-371008879" Value="5" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-37_R-67" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1173490589_R-1173490589" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-353_R-1383" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1833" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-460_R-2086" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-472_R-2148" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-913175676_R-913175676" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1378431638_R-1378431638" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-580936311_R-580936311" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1374273422_R-1374273422" Value="51" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-952_R-3928" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-1033_R-4471" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-1125_R-4600" Value="5" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1101_R-4538" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-1117_R-4598" Value="6" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-954_R-4285" Value="1" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-18_R-424029910" ChannelId="CH-1470867484" Links="GA-52" />
+                  <ComObjectInstanceRef RefId="O-13_R-1237331022" ChannelId="CH-1470867484" Links="GA-53" />
+                  <ComObjectInstanceRef RefId="O-26_R-997535446" ChannelId="CH-1470867484" Links="GA-58" />
+                  <ComObjectInstanceRef RefId="O-33_R-173361916" ChannelId="CH-1874152011" Links="GA-62" />
+                  <ComObjectInstanceRef RefId="O-78_R-130" ChannelId="CH-2" Links="GA-24" />
+                  <ComObjectInstanceRef RefId="O-73_R-119" ChannelId="CH-2" Links="GA-25" />
+                  <ComObjectInstanceRef RefId="O-132_R-1324979835" ChannelId="CH-711352597" Links="GA-95" />
+                  <ComObjectInstanceRef RefId="O-118_R-321" Description="chauffage SDB" ChannelId="CH-5" Links="GA-100" />
+                  <ComObjectInstanceRef RefId="O-113_R-310" Description="chauffage SDB" ChannelId="CH-5" Links="GA-101" />
+                  <ComObjectInstanceRef RefId="O-38_R-1033624302" ChannelId="CH-1874152011" Links="GA-103" />
+                </ComObjectInstanceRefs>
+                <ChannelInstances>
+                  <ChannelInstance Id="P-0930-0_DI-31_CI-3" Name="Bouton poussoir 1" IsActive="true" RefId="CH-1470867484" />
+                  <ChannelInstance Id="P-0930-0_DI-31_CI-4" Name="Bouton poussoir 2" IsActive="true" RefId="CH-1874152011" />
+                  <ChannelInstance Id="P-0930-0_DI-31_CI-12" Name="Sonde de température interne" IsActive="true" RefId="CH-711352597" />
+                  <ChannelInstance Id="P-0930-0_DI-31_CI-13" Name="Informations" IsActive="true" RefId="CH-1297404556" />
+                  <ChannelInstance Id="P-0930-0_DI-31_CI-6" Name="Bouton poussoir 3" IsActive="true" RefId="CH-1" />
+                  <ChannelInstance Id="P-0930-0_DI-31_CI-7" Name="Bouton poussoir 4" IsActive="true" RefId="CH-2" />
+                  <ChannelInstance Id="P-0930-0_DI-31_CI-9" Name="Bouton poussoir 5" IsActive="true" RefId="CH-4" />
+                  <ChannelInstance Id="P-0930-0_DI-31_CI-10" Name="Bouton poussoir 6" IsActive="true" RefId="CH-5" />
+                  <ChannelInstance Id="P-0930-0_DI-31_CI-14" Name="Général" IsActive="true" RefId="CH-486183250" />
+                  <ChannelInstance Id="P-0930-0_DI-31_CI-15" Name="Gestion des LED" IsActive="true" RefId="CH-889467777" />
+                </ChannelInstances>
+                <GroupObjectTree GroupObjectInstances="O-4_R-691479710 O-6_R-858138322 O-5_R-982098703 O-18_R-424029910 O-13_R-1237331022 O-26_R-997535446 O-25_R-1237330927 O-33_R-173361916 O-78_R-130 O-73_R-119 O-132_R-1324979835 O-118_R-321 O-113_R-310">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-1470867484" Text="Bouton poussoir 1" GroupObjectInstances="O-25_R-1237330927 O-18_R-424029910 O-13_R-1237331022 O-26_R-997535446" />
+                    <Node Type="Channel" RefId="CH-1874152011" Text="Bouton poussoir 2" GroupObjectInstances="O-33_R-173361916 O-38_R-1033624302" />
+                    <Node Type="Channel" RefId="CH-711352597" Text="Sonde de température interne" GroupObjectInstances="O-132_R-1324979835" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Informations" />
+                    <Node Type="Channel" RefId="CH-1" Text="Bouton poussoir 3" />
+                    <Node Type="Channel" RefId="CH-2" Text="Bouton poussoir 4" GroupObjectInstances="O-78_R-130 O-73_R-119" />
+                    <Node Type="Channel" RefId="CH-4" Text="Bouton poussoir 5" />
+                    <Node Type="Channel" RefId="CH-5" Text="Bouton poussoir 6" GroupObjectInstances="O-118_R-321 O-113_R-310" />
+                    <Node Type="Channel" RefId="CH-486183250" Text="Général" GroupObjectInstances="O-4_R-691479710" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="Gestion des LED" GroupObjectInstances="O-6_R-858138322 O-5_R-982098703" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:02:25.5510885Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-34" Address="5" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20TXA604D-1_P-TXA604D" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20TXA604D-1_HP-20AA-10-6877" Comment="" Description="Mod4REZ" SerialNumber="AAlAEvzq" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2018-11-24T08:34:05.6672368Z" LastDownload="2020-12-28T17:00:35.6934782Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" UniqueId="{98278DDA-0466-4BCE-B45D-FF2C6F8C99B2}" Puid="263">
+                <ChannelInstances>
+                  <ChannelInstance Id="P-0930-0_DI-34_CI-1" Name="Sortie 1" IsActive="true" RefId="CH-486183250" />
+                  <ChannelInstance Id="P-0930-0_DI-34_CI-2" Name="Sortie 2" IsActive="true" RefId="CH-889467777" />
+                  <ChannelInstance Id="P-0930-0_DI-34_CI-4" Name="Sortie 3" IsActive="true" RefId="CH-1" />
+                  <ChannelInstance Id="P-0930-0_DI-34_CI-5" Name="Sortie 4" IsActive="true" RefId="CH-2" />
+                  <ChannelInstance Id="P-0930-0_DI-34_CI-7" Name="Informations" IsActive="true" RefId="CH-1297404556" />
+                </ChannelInstances>
+                <GroupObjectTree GroupObjectInstances="O-0_R-1636231488 O-1_R-173361915 O-10_R-1636231489 O-11_R-173361916 O-20_R-1 O-21_R-2 O-30_R-11 O-31_R-12">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-486183250" Text="Sortie 1" GroupObjectInstances="O-0_R-1636231488 O-1_R-173361915" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="Sortie 2" GroupObjectInstances="O-10_R-1636231489 O-11_R-173361916" />
+                    <Node Type="Channel" RefId="CH-1" Text="Sortie 3" GroupObjectInstances="O-20_R-1 O-21_R-2" />
+                    <Node Type="Channel" RefId="CH-2" Text="Sortie 4" GroupObjectInstances="O-30_R-11 O-31_R-12" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Informations" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:00:35.7004797Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-36" Address="61" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_P-WST3xx" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_HP-E05E-11-E2C3" Comment="" Description="sam hall" SerialNumber="AAlAFVEt" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T10:44:36.575568Z" LastDownload="2020-12-28T17:01:26.1580402Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" UniqueId="{DA7F2ADB-FA84-40E4-B71D-E2681438ED2C}" Puid="287">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1332_R-840" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-531857694_R-531857694" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-982276810_R-982277151" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-33_R-50" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1085561504_R-1085561504" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-37_R-67" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1173490589_R-1173490589" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-371008879_R-371008879" Value="5" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1378431638_R-1378431638" Value="1" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-18_R-1636231488" ChannelId="CH-1470867484" Links="GA-17" />
+                  <ComObjectInstanceRef RefId="O-13_R-173361915" ChannelId="CH-1470867484" Links="GA-18" />
+                  <ComObjectInstanceRef RefId="O-33_R-173361916" ChannelId="CH-1874152011" Links="GA-25" />
+                  <ComObjectInstanceRef RefId="O-132_R-1324979835" ChannelId="CH-711352597" Links="GA-86" />
+                  <ComObjectInstanceRef RefId="O-38_R-1033624302" ChannelId="CH-1874152011" Links="GA-111" />
+                </ComObjectInstanceRefs>
+                <ChannelInstances>
+                  <ChannelInstance Id="P-0930-0_DI-36_CI-4" Name="Bouton poussoir 2" IsActive="true" RefId="CH-1874152011" />
+                  <ChannelInstance Id="P-0930-0_DI-36_CI-12" Name="Sonde de température interne" IsActive="true" RefId="CH-711352597" />
+                  <ChannelInstance Id="P-0930-0_DI-36_CI-13" Name="Informations" IsActive="true" RefId="CH-1297404556" />
+                  <ChannelInstance Id="P-0930-0_DI-36_CI-6" Name="Bouton poussoir 3" IsActive="true" RefId="CH-1" />
+                  <ChannelInstance Id="P-0930-0_DI-36_CI-7" Name="Bouton poussoir 4" IsActive="true" RefId="CH-2" />
+                  <ChannelInstance Id="P-0930-0_DI-36_CI-9" Name="Bouton poussoir 5" IsActive="true" RefId="CH-4" />
+                  <ChannelInstance Id="P-0930-0_DI-36_CI-10" Name="Bouton poussoir 6" IsActive="true" RefId="CH-5" />
+                  <ChannelInstance Id="P-0930-0_DI-36_CI-14" Name="Général" IsActive="true" RefId="CH-486183250" />
+                  <ChannelInstance Id="P-0930-0_DI-36_CI-15" Name="Gestion des LED" IsActive="true" RefId="CH-889467777" />
+                  <ChannelInstance Id="P-0930-0_DI-36_CI-16" Name="Bouton poussoir 1" IsActive="true" RefId="CH-1470867484" />
+                </ChannelInstances>
+                <GroupObjectTree GroupObjectInstances="O-4_R-691479710 O-6_R-858138322 O-5_R-982098703 O-18_R-1636231488 O-13_R-173361915 O-38_R-1636231489 O-33_R-173361916 O-132_R-1324979835">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-1874152011" Text="Bouton poussoir 2" GroupObjectInstances="O-38_R-1033624302 O-33_R-173361916" />
+                    <Node Type="Channel" RefId="CH-711352597" Text="Sonde de température interne" GroupObjectInstances="O-132_R-1324979835" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Informations" />
+                    <Node Type="Channel" RefId="CH-1" Text="Bouton poussoir 3" />
+                    <Node Type="Channel" RefId="CH-2" Text="Bouton poussoir 4" />
+                    <Node Type="Channel" RefId="CH-4" Text="Bouton poussoir 5" />
+                    <Node Type="Channel" RefId="CH-5" Text="Bouton poussoir 6" />
+                    <Node Type="Channel" RefId="CH-486183250" Text="Général" GroupObjectInstances="O-4_R-691479710" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="Gestion des LED" GroupObjectInstances="O-6_R-858138322 O-5_R-982098703" />
+                    <Node Type="Channel" RefId="CH-1470867484" Text="Bouton poussoir 1" GroupObjectInstances="O-18_R-1636231488 O-13_R-173361915" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:01:26.1670431Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-37" Address="6" Name="" ProductRefId="M-0064_H-MTN647091-1-O000C_P-MTN647091" Hardware2ProgramRefId="M-0064_H-MTN647091-1-O000C_HP-3211-11-84C8-O000C" Comment="" Description="Dimmer 0-10V" SerialNumber="AAwAGzYj" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T10:01:15.4270553Z" LastDownload="2020-12-28T17:00:51.3880421Z" LastUsedAPDULength="15" Puid="322">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0064_A-3211-11-84C8-O000C_P-10_R-10" Value="2" />
+                  <ParameterInstanceRef RefId="M-0064_A-3211-11-84C8-O000C_P-228_R-228" Value="1" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-0_R-17" Text="Switch object" Links="GA-10 GA-16 GA-113 GA-124" />
+                  <ComObjectInstanceRef RefId="O-1_R-18" Text="Dimming object" Links="GA-105" />
+                  <ComObjectInstanceRef RefId="O-2_R-19" Text="Value object" Links="GA-104" />
+                  <ComObjectInstanceRef RefId="O-8_R-13" Links="GA-11" />
+                </ComObjectInstanceRefs>
+                <GroupObjectTree GroupObjectInstances="O-0_R-17 O-1_R-18 O-2_R-19 O-8_R-13" />
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:00:51.3970442Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-38" Address="97" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20TCC530E-1_P-TCC530E" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20TCC530E-1_HP-207D-10-2CD6" Comment="" Description="Détecteur buanderie" SerialNumber="AAlADY1a" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T09:54:30.7243309Z" LastDownload="2020-12-28T17:06:41.2984915Z" LastUsedAPDULength="15" Puid="344">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-207D-10-2CD6_P-25009_R-25009" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-207D-10-2CD6_P-1110_R-1110" Value="500" />
+                  <ParameterInstanceRef RefId="M-0009_A-207D-10-2CD6_P-26008_R-26008" Value="30" />
+                  <ParameterInstanceRef RefId="M-0009_A-207D-10-2CD6_P-104_R-25207" Value="1" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-29_R-29" Text="Lighting channel" Links="GA-123" />
+                  <ComObjectInstanceRef RefId="O-7_R-8" Text="Lighting channel" Links="GA-28" />
+                </ComObjectInstanceRefs>
+                <GroupObjectTree GroupObjectInstances="O-24_R-25 O-28_R-42 O-6_R-43 O-7_R-8 O-31_R-31 O-29_R-29" />
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:06:41.3144954Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-39" Address="95" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WKT501-1_P-WKT501" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WKT501-1_HP-2057-10-91DB" Comment="" Description="détecteur cellier" SerialNumber="AAlAJMQL" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T09:54:15.0186826Z" LastDownload="2020-12-28T17:06:23.873162Z" LastUsedAPDULength="15" Puid="345">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-2057-10-91DB_P-204_R-204" Value="3" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-2_R-10" Links="GA-112" />
+                </ComObjectInstanceRefs>
+                <GroupObjectTree GroupObjectInstances="O-0_R-2 O-2_R-10 O-6_R-36 O-9_R-35 O-10_R-33 O-11_R-38" />
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:06:23.8971673Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-40" Address="94" Name="" ProductRefId="M-0009_H-9.20.2F.2FTCC510S-1_P-TCC510S" Hardware2ProgramRefId="M-0009_H-9.20.2F.2FTCC510S-1_HP-207C-10-0210" Comment="" Description="dét prés garage poubelles" SerialNumber="AAlAFZdz" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T09:54:05.1250017Z" LastDownload="2020-12-28T17:06:16.2850965Z" LastUsedAPDULength="15" Puid="346">
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-1_R-30001" Links="GA-106" />
+                </ComObjectInstanceRefs>
+                <GroupObjectTree GroupObjectInstances="O-0_R-30501 O-1_R-30001 O-6_R-30544 O-7_R-30542" />
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:06:16.3121018Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-41" Address="93" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_P-WST3xx" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_HP-E05E-11-E2C3" Comment="" Description="dressing" SerialNumber="AAlAE09W" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T10:44:36.5798815Z" LastDownload="2020-12-28T17:06:09.9842894Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" Puid="347">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1332_R-840" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-531857694_R-531857694" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-982276810_R-982277151" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-33_R-50" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-371008879_R-371008879" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-982276810_R-982277165" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-37_R-67" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1173490589_R-1173490589" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1101_R-4538" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1378431638_R-1378431638" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-273_R-1305" Value="5" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-18_R-1636231488" ChannelId="CH-1470867484" Links="GA-65" />
+                  <ComObjectInstanceRef RefId="O-13_R-173361915" ChannelId="CH-1470867484" Links="GA-66" />
+                  <ComObjectInstanceRef RefId="O-38_R-1636231489" ChannelId="CH-1874152011" Links="GA-61" />
+                  <ComObjectInstanceRef RefId="O-33_R-173361916" ChannelId="CH-1874152011" Links="GA-62" />
+                  <ComObjectInstanceRef RefId="O-132_R-1324979835" ChannelId="CH-711352597" Links="GA-93" />
+                </ComObjectInstanceRefs>
+                <GroupObjectTree GroupObjectInstances="O-4_R-691479710 O-6_R-858138322 O-5_R-982098703 O-18_R-1636231488 O-13_R-173361915 O-38_R-1636231489 O-33_R-173361916 O-132_R-1324979835">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-1" Text="Bouton poussoir 3" />
+                    <Node Type="Channel" RefId="CH-2" Text="Bouton poussoir 4" />
+                    <Node Type="Channel" RefId="CH-4" Text="Bouton poussoir 5" />
+                    <Node Type="Channel" RefId="CH-5" Text="Bouton poussoir 6" />
+                    <Node Type="Channel" RefId="CH-711352597" Text="Internal temperature sensor" GroupObjectInstances="O-132_R-1324979835" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Information" />
+                    <Node Type="Channel" RefId="CH-486183250" Text="General" GroupObjectInstances="O-4_R-691479710" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="LED management" GroupObjectInstances="O-6_R-858138322 O-5_R-982098703" />
+                    <Node Type="Channel" RefId="CH-1470867484" Text="Push-button 1" GroupObjectInstances="O-18_R-1636231488 O-13_R-173361915" />
+                    <Node Type="Channel" RefId="CH-1874152011" Text="Push-button 2" GroupObjectInstances="O-38_R-1636231489 O-33_R-173361916" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:06:10.0202976Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-42" Address="92" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_P-WST3xx" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_HP-E05E-11-E2C3" Comment="" Description="ch1 porte" SerialNumber="AAlAFVEK" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T10:44:36.575568Z" LastDownload="2020-12-28T17:05:57.0236619Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" Puid="348">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1332_R-840" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-713_R-3197" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-715_R-3541" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-893_R-3839" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-926_R-3901" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-952_R-3928" Value="5" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1101_R-4538" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-1125_R-4600" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1378431638_R-1378431638" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1262447847_R-1262447847" Value="5" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-223966364_R-223966364" Value="12" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-699219709_R-699219709" Value="5" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1374273422_R-1374273422" Value="12" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-98_R-229" ChannelId="CH-4" Links="GA-44" />
+                  <ComObjectInstanceRef RefId="O-93_R-203" ChannelId="CH-4" Links="GA-45" />
+                  <ComObjectInstanceRef RefId="O-113_R-310" ChannelId="CH-5" Links="GA-62" />
+                  <ComObjectInstanceRef RefId="O-132_R-1324979835" ChannelId="CH-711352597" Links="GA-90" />
+                  <ComObjectInstanceRef RefId="O-118_R-324" ChannelId="CH-5" Links="GA-103" />
+                </ComObjectInstanceRefs>
+                <GroupObjectTree GroupObjectInstances="O-4_R-691479710 O-6_R-858138322 O-5_R-982098703 O-98_R-229 O-93_R-203 O-113_R-310 O-132_R-1324979835">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-1" Text="Bouton poussoir 3" />
+                    <Node Type="Channel" RefId="CH-2" Text="Bouton poussoir 4" />
+                    <Node Type="Channel" RefId="CH-4" Text="Bouton poussoir 5" GroupObjectInstances="O-98_R-229 O-93_R-203" />
+                    <Node Type="Channel" RefId="CH-5" Text="Bouton poussoir 6" GroupObjectInstances="O-118_R-324 O-113_R-310" />
+                    <Node Type="Channel" RefId="CH-1470867484" Text="Push-button 1" />
+                    <Node Type="Channel" RefId="CH-1874152011" Text="Push-button 2" />
+                    <Node Type="Channel" RefId="CH-711352597" Text="Internal temperature sensor" GroupObjectInstances="O-132_R-1324979835" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Information" />
+                    <Node Type="Channel" RefId="CH-486183250" Text="General" GroupObjectInstances="O-4_R-691479710" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="LED management" GroupObjectInstances="O-6_R-858138322 O-5_R-982098703" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:05:57.0416658Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-43" Address="91" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_P-WST3xx" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_HP-E05E-11-E2C3" Comment="" Description="ch1 lit" SerialNumber="AAlAFlQA" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T10:01:15.5314852Z" LastDownload="2020-12-28T17:05:43.9222406Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" Puid="349">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1332_R-840" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-531857694_R-531857694" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-982276810_R-982277151" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-33_R-50" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1085561504_R-1085561504" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-103_R-520" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-1087" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-323_R-1385" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-332_R-1448" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-353_R-1383" Value="11" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1631" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1637" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-413_R-2033" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-460_R-2086" Value="4" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-471_R-2146" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-472_R-2148" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-913175676_R-913175676" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1378431638_R-1378431638" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-699219709_R-699219709" Value="5" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1374273422_R-1374273422" Value="12" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1262447847_R-1262447847" Value="5" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-223966364_R-223966364" Value="12" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-952_R-3928" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-954_R-4285" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-1125_R-4600" Value="0" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-5_R-982098703" ChannelId="CH-889467777" Links="GA-117" />
+                  <ComObjectInstanceRef RefId="O-18_R-1636231488" ChannelId="CH-1470867484" Links="GA-61" />
+                  <ComObjectInstanceRef RefId="O-13_R-173361915" ChannelId="CH-1470867484" Links="GA-62" />
+                  <ComObjectInstanceRef RefId="O-58_R-41" ChannelId="CH-1" Links="GA-44" />
+                  <ComObjectInstanceRef RefId="O-53_R-25" ChannelId="CH-1" Links="GA-45" />
+                  <ComObjectInstanceRef RefId="O-86_R-158" ChannelId="CH-2" Links="GA-120 GA-124" />
+                  <ComObjectInstanceRef RefId="O-72_R-111" Description="Statut global" ChannelId="CH-2" Links="GA-2 GA-8 GA-11 GA-13 GA-15 GA-18 GA-20 GA-23 GA-25 GA-27 GA-29 GA-31 GA-33 GA-35 GA-37 GA-39 GA-41 GA-43 GA-45 GA-47 GA-49 GA-53 GA-55 GA-62 GA-64 GA-66 GA-68" />
+                  <ComObjectInstanceRef RefId="O-132_R-1324979835" ChannelId="CH-711352597" Links="GA-90" />
+                  <ComObjectInstanceRef RefId="O-118_R-321" ChannelId="CH-5" Links="GA-100" />
+                  <ComObjectInstanceRef RefId="O-113_R-310" ChannelId="CH-5" Links="GA-120" />
+                </ComObjectInstanceRefs>
+                <GroupObjectTree GroupObjectInstances="O-4_R-691479710 O-6_R-858138322 O-5_R-982098703 O-18_R-1636231488 O-13_R-173361915 O-58_R-41 O-53_R-25 O-86_R-158 O-72_R-111 O-132_R-1324979835 O-118_R-321 O-113_R-310">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-1" Text="Bouton poussoir 3" GroupObjectInstances="O-58_R-41 O-53_R-25" />
+                    <Node Type="Channel" RefId="CH-2" Text="Bouton poussoir 4" GroupObjectInstances="O-72_R-111 O-86_R-158" />
+                    <Node Type="Channel" RefId="CH-4" Text="Bouton poussoir 5" />
+                    <Node Type="Channel" RefId="CH-5" Text="Bouton poussoir 6" GroupObjectInstances="O-118_R-321 O-113_R-310" />
+                    <Node Type="Channel" RefId="CH-1874152011" Text="Push-button 2" />
+                    <Node Type="Channel" RefId="CH-711352597" Text="Internal temperature sensor" GroupObjectInstances="O-132_R-1324979835" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Information" />
+                    <Node Type="Channel" RefId="CH-486183250" Text="General" GroupObjectInstances="O-4_R-691479710" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="LED management" GroupObjectInstances="O-6_R-858138322 O-5_R-982098703" />
+                    <Node Type="Channel" RefId="CH-1470867484" Text="Push-button 1" GroupObjectInstances="O-18_R-1636231488 O-13_R-173361915" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:05:43.9552479Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-44" Address="90" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_P-WST3xx" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_HP-E05E-11-E2C3" Comment="" Description="garage couloir" SerialNumber="AAlAE09g" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T09:53:42.8410819Z" LastDownload="2020-12-28T17:05:28.6864534Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" Puid="350">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-531857694_R-531857694" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-982276810_R-982277151" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-33_R-50" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1332_R-840" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-103_R-520" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-1087" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-323_R-1385" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-332_R-1448" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-353_R-1383" Value="11" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1631" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1637" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-413_R-2033" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-460_R-2086" Value="4" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-471_R-2146" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-472_R-2148" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-713_R-3197" Value="5" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-893_R-3839" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-926_R-3901" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-952_R-3928" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-954_R-4285" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1101_R-4538" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-1125_R-4600" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-913175676_R-913175676" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1378431638_R-1378431638" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-371008879_R-371008879" Value="5" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-18_R-1636231488" ChannelId="CH-1470867484" Links="GA-32" />
+                  <ComObjectInstanceRef RefId="O-13_R-173361915" ChannelId="CH-1470867484" Links="GA-33" />
+                  <ComObjectInstanceRef RefId="O-58_R-41" ChannelId="CH-1" Links="GA-36" />
+                  <ComObjectInstanceRef RefId="O-53_R-25" ChannelId="CH-1" Links="GA-37" />
+                  <ComObjectInstanceRef RefId="O-86_R-158" ChannelId="CH-2" Links="GA-124" />
+                  <ComObjectInstanceRef RefId="O-93_R-203" ChannelId="CH-4" Links="GA-25" />
+                  <ComObjectInstanceRef RefId="O-118_R-321" ChannelId="CH-5" Links="GA-38" />
+                  <ComObjectInstanceRef RefId="O-113_R-310" ChannelId="CH-5" Links="GA-39" />
+                  <ComObjectInstanceRef RefId="O-72_R-111" Description="Statut global" ChannelId="CH-2" Links="GA-2 GA-8 GA-11 GA-13 GA-15 GA-18 GA-20 GA-23 GA-25 GA-27 GA-29 GA-31 GA-33 GA-35 GA-37 GA-39 GA-41 GA-43 GA-45 GA-47 GA-49 GA-53 GA-55 GA-62 GA-64 GA-66 GA-68" />
+                  <ComObjectInstanceRef RefId="O-132_R-1324979835" ChannelId="CH-711352597" Links="GA-89" />
+                  <ComObjectInstanceRef RefId="O-38_R-1033624302" Text="Push-button 2" ChannelId="CH-1874152011" Links="GA-109" />
+                  <ComObjectInstanceRef RefId="O-98_R-225" ChannelId="CH-4" Links="GA-111" />
+                </ComObjectInstanceRefs>
+                <GroupObjectTree GroupObjectInstances="O-4_R-691479710 O-6_R-858138322 O-5_R-982098703 O-18_R-1636231488 O-13_R-173361915 O-58_R-41 O-53_R-25 O-86_R-158 O-98_R-229 O-93_R-203 O-118_R-321 O-113_R-310 O-72_R-111 O-132_R-1324979835">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-1" Text="Push-button 3" GroupObjectInstances="O-58_R-41 O-53_R-25" />
+                    <Node Type="Channel" RefId="CH-2" Text="Push-button 4" GroupObjectInstances="O-72_R-111 O-86_R-158" />
+                    <Node Type="Channel" RefId="CH-4" Text="Push-button 5" GroupObjectInstances="O-98_R-225 O-93_R-203" />
+                    <Node Type="Channel" RefId="CH-5" Text="Push-button 6" GroupObjectInstances="O-118_R-321 O-113_R-310" />
+                    <Node Type="Channel" RefId="CH-1470867484" Text="Push-button 1" GroupObjectInstances="O-18_R-1636231488 O-13_R-173361915" />
+                    <Node Type="Channel" RefId="CH-1874152011" Text="Push-button 2" GroupObjectInstances="O-38_R-1033624302" />
+                    <Node Type="Channel" RefId="CH-711352597" Text="Internal temperature sensor" GroupObjectInstances="O-132_R-1324979835" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Information" />
+                    <Node Type="Channel" RefId="CH-486183250" Text="General" GroupObjectInstances="O-4_R-691479710" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="LED management" GroupObjectInstances="O-6_R-858138322 O-5_R-982098703" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:05:28.7244619Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-45" Address="79" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_P-WST3xx" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_HP-E05E-11-E2C3" Comment="" Description="hall de jour escalier" SerialNumber="AAlAE1BX" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T10:44:36.5748112Z" LastDownload="2020-12-28T17:05:12.9138777Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" Puid="351">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1332_R-840" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-531857694_R-531857694" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-371008879_R-371008879" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-33_R-50" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1085561504_R-1085561504" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-982276810_R-982277165" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-37_R-67" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1173490589_R-1173490589" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-103_R-520" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-1087" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-323_R-1385" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-332_R-1448" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-353_R-1383" Value="5" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-460_R-2086" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-472_R-2148" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-713_R-3197" Value="5" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-893_R-3839" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-926_R-3901" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-982276810_R-982277151" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1378431638_R-1378431638" Value="1" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-38_R-1636231489" ChannelId="CH-1874152011" Links="GA-36" />
+                  <ComObjectInstanceRef RefId="O-33_R-173361916" ChannelId="CH-1874152011" Links="GA-37" />
+                  <ComObjectInstanceRef RefId="O-58_R-41" ChannelId="CH-1" Links="GA-38" />
+                  <ComObjectInstanceRef RefId="O-53_R-25" ChannelId="CH-1" Links="GA-39" />
+                  <ComObjectInstanceRef RefId="O-73_R-119" ChannelId="CH-2" Links="GA-25" />
+                  <ComObjectInstanceRef RefId="O-93_R-203" ChannelId="CH-4" Links="GA-62" />
+                  <ComObjectInstanceRef RefId="O-13_R-173361915" ChannelId="CH-1470867484" Links="GA-23" />
+                  <ComObjectInstanceRef RefId="O-18_R-1636231488" ChannelId="CH-1470867484" Links="GA-22" />
+                  <ComObjectInstanceRef RefId="O-132_R-1324979835" ChannelId="CH-711352597" Links="GA-84" />
+                  <ComObjectInstanceRef RefId="O-98_R-225" ChannelId="CH-4" Links="GA-103" />
+                  <ComObjectInstanceRef RefId="O-78_R-130" Text="Push-button 4" Links="GA-111" />
+                </ComObjectInstanceRefs>
+                <GroupObjectTree GroupObjectInstances="O-4_R-691479710 O-6_R-858138322 O-5_R-982098703 O-38_R-1636231489 O-33_R-173361916 O-58_R-41 O-53_R-25 O-78_R-130 O-73_R-119 O-93_R-203 O-13_R-173361915 O-18_R-1636231488 O-132_R-1324979835">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-1" Text="Bouton poussoir 3" GroupObjectInstances="O-58_R-41 O-53_R-25" />
+                    <Node Type="Channel" RefId="CH-2" Text="Bouton poussoir 4" GroupObjectInstances="O-78_R-133 O-73_R-119" />
+                    <Node Type="Channel" RefId="CH-4" Text="Bouton poussoir 5" GroupObjectInstances="O-98_R-225 O-93_R-203" />
+                    <Node Type="Channel" RefId="CH-5" Text="Bouton poussoir 6" />
+                    <Node Type="Channel" RefId="CH-711352597" Text="Internal temperature sensor" GroupObjectInstances="O-132_R-1324979835" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Information" />
+                    <Node Type="Channel" RefId="CH-486183250" Text="General" GroupObjectInstances="O-4_R-691479710" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="LED management" GroupObjectInstances="O-6_R-858138322 O-5_R-982098703" />
+                    <Node Type="Channel" RefId="CH-1470867484" Text="Push-button 1" GroupObjectInstances="O-18_R-1636231488 O-13_R-173361915" />
+                    <Node Type="Channel" RefId="CH-1874152011" Text="Push-button 2" GroupObjectInstances="O-38_R-1636231489 O-33_R-173361916" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:05:12.9328803Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-46" Address="78" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_P-WST3xx" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_HP-E05E-11-E2C3" Comment="" Description="hall jour porte" SerialNumber="AAlAFVEj" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T10:01:15.522584Z" LastDownload="2020-12-28T17:04:59.7915508Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" Puid="352">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1332_R-840" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-103_R-520" Value="5" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-37_R-67" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-323_R-1385" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-353_R-1383" Value="11" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1631" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1637" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-413_R-2033" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-460_R-2086" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-471_R-2146" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-713_R-3197" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-715_R-3541" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-716_R-3578" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-715_R-3204" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-715_R-3205" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-715_R-3206" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-715_R-3208" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-913175676_R-913175676" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1378431638_R-1378431638" Value="1" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-53_R-25" ChannelId="CH-1" Links="GA-25" />
+                  <ComObjectInstanceRef RefId="O-86_R-158" ChannelId="CH-2" Links="GA-124" />
+                  <ComObjectInstanceRef RefId="O-85_R-124" Description="Statut global" ChannelId="CH-2" Links="GA-8 GA-2 GA-11 GA-13 GA-15 GA-18 GA-20 GA-23 GA-25 GA-27 GA-29 GA-31 GA-33 GA-35 GA-37 GA-39 GA-41 GA-43 GA-45 GA-47 GA-49 GA-53 GA-55 GA-62 GA-64 GA-66" />
+                  <ComObjectInstanceRef RefId="O-98_R-229" ChannelId="CH-4" Links="GA-78" />
+                  <ComObjectInstanceRef RefId="O-132_R-1324979835" ChannelId="CH-711352597" Links="GA-84" />
+                  <ComObjectInstanceRef RefId="O-58_R-41" Text="Push-button 3" Links="GA-111" />
+                </ComObjectInstanceRefs>
+                <GroupObjectTree GroupObjectInstances="O-4_R-691479710 O-6_R-858138322 O-5_R-982098703 O-53_R-25 O-58_R-41 O-86_R-158 O-85_R-124 O-98_R-229 O-132_R-1324979835">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-1" Text="Bouton poussoir 3" GroupObjectInstances="O-58_R-44 O-53_R-25" />
+                    <Node Type="Channel" RefId="CH-2" Text="Bouton poussoir 4" GroupObjectInstances="O-85_R-124 O-86_R-158" />
+                    <Node Type="Channel" RefId="CH-4" Text="Bouton poussoir 5" GroupObjectInstances="O-98_R-229" />
+                    <Node Type="Channel" RefId="CH-5" Text="Bouton poussoir 6" />
+                    <Node Type="Channel" RefId="CH-1470867484" Text="Push-button 1" />
+                    <Node Type="Channel" RefId="CH-1874152011" Text="Push-button 2" />
+                    <Node Type="Channel" RefId="CH-711352597" Text="Internal temperature sensor" GroupObjectInstances="O-132_R-1324979835" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Information" />
+                    <Node Type="Channel" RefId="CH-486183250" Text="General" GroupObjectInstances="O-4_R-691479710" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="LED management" GroupObjectInstances="O-6_R-858138322 O-5_R-982098703" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:04:59.8155548Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-47" Address="77" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_P-WST3xx" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_HP-E05E-11-E2C3" Comment="" Description="hall nuit" SerialNumber="AAlAFVFM" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T10:44:36.5798815Z" LastDownload="2020-12-28T17:04:46.3149966Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" Puid="353">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1332_R-840" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-531857694_R-531857694" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-982276810_R-982277151" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-33_R-50" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1085561504_R-1085561504" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-103_R-520" Value="5" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-715_R-3258" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-323_R-1385" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-332_R-1448" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-713_R-3197" Value="11" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-812_R-3761" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-893_R-3839" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-926_R-3901" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1378431638_R-1378431638" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-715_R-3264" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-913175676_R-913175676" Value="3" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-18_R-1636231488" ChannelId="CH-1470867484" Links="GA-40" />
+                  <ComObjectInstanceRef RefId="O-13_R-173361915" ChannelId="CH-1470867484" Links="GA-41" />
+                  <ComObjectInstanceRef RefId="O-53_R-25" ChannelId="CH-1" Links="GA-62" />
+                  <ComObjectInstanceRef RefId="O-105_R-212" ChannelId="CH-4" Links="GA-64" />
+                  <ComObjectInstanceRef RefId="O-106_R-288" ChannelId="CH-4" Links="GA-63" />
+                  <ComObjectInstanceRef RefId="O-132_R-1324979835" ChannelId="CH-711352597" Links="GA-94" />
+                  <ComObjectInstanceRef RefId="O-58_R-44" ChannelId="CH-1" Links="GA-103" />
+                </ComObjectInstanceRefs>
+                <GroupObjectTree GroupObjectInstances="O-4_R-691479710 O-6_R-858138322 O-5_R-982098703 O-18_R-1636231488 O-13_R-173361915 O-53_R-25 O-132_R-1324979835">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-1470867484" Text="Bouton poussoir 1" GroupObjectInstances="O-18_R-1636231488 O-13_R-173361915" />
+                    <Node Type="Channel" RefId="CH-1874152011" Text="Bouton poussoir 2" />
+                    <Node Type="Channel" RefId="CH-711352597" Text="Sonde de température interne" GroupObjectInstances="O-132_R-1324979835" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Informations" />
+                    <Node Type="Channel" RefId="CH-1" Text="Bouton poussoir 3" GroupObjectInstances="O-58_R-44 O-53_R-25" />
+                    <Node Type="Channel" RefId="CH-2" Text="Bouton poussoir 4" />
+                    <Node Type="Channel" RefId="CH-4" Text="Bouton poussoir 5" GroupObjectInstances="O-106_R-288 O-105_R-212" />
+                    <Node Type="Channel" RefId="CH-5" Text="Bouton poussoir 6" />
+                    <Node Type="Channel" RefId="CH-486183250" Text="Général" GroupObjectInstances="O-4_R-691479710" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="Gestion des LED" GroupObjectInstances="O-6_R-858138322 O-5_R-982098703" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:04:46.3350015Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-48" Address="76" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_P-WST3xx" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_HP-E05E-11-E2C3" Comment="" Description="ch3" SerialNumber="AAlAFVEl" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T10:44:36.575568Z" LastDownload="2020-12-28T17:04:32.0405159Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" Puid="354">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1332_R-840" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-37_R-67" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1173490589_R-1173490589" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-413_R-2033" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-353_R-1383" Value="11" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-323_R-1385" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-332_R-1448" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-460_R-2086" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-472_R-2148" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-33_R-50" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1085561504_R-1085561504" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-713_R-3197" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-715_R-3541" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-893_R-3839" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-952_R-3928" Value="5" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1631" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1101_R-4538" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1378431638_R-1378431638" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1262447847_R-1262447847" Value="5" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-223966364_R-223966364" Value="12" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-355_R-1637" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-699219709_R-699219709" Value="5" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1374273422_R-1374273422" Value="12" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-913175676_R-913175676" Value="3" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-86_R-158" ChannelId="CH-2" Links="GA-67" />
+                  <ComObjectInstanceRef RefId="O-85_R-124" ChannelId="CH-2" Links="GA-68" />
+                  <ComObjectInstanceRef RefId="O-98_R-229" ChannelId="CH-4" Links="GA-42" />
+                  <ComObjectInstanceRef RefId="O-93_R-203" ChannelId="CH-4" Links="GA-43" />
+                  <ComObjectInstanceRef RefId="O-113_R-310" ChannelId="CH-5" Links="GA-62" />
+                  <ComObjectInstanceRef RefId="O-132_R-1324979835" ChannelId="CH-711352597" Links="GA-92" />
+                  <ComObjectInstanceRef RefId="O-118_R-324" ChannelId="CH-5" Links="GA-103" />
+                </ComObjectInstanceRefs>
+                <GroupObjectTree GroupObjectInstances="O-4_R-691479710 O-6_R-858138322 O-5_R-982098703 O-98_R-229 O-93_R-203 O-113_R-310 O-132_R-1324979835">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-486183250" Text="Général" GroupObjectInstances="O-4_R-691479710" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="Gestion des LED" GroupObjectInstances="O-6_R-858138322 O-5_R-982098703" />
+                    <Node Type="Channel" RefId="CH-1470867484" Text="Bouton poussoir 1" />
+                    <Node Type="Channel" RefId="CH-1874152011" Text="Bouton poussoir 2" />
+                    <Node Type="Channel" RefId="CH-711352597" Text="Sonde de température interne" GroupObjectInstances="O-132_R-1324979835" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Informations" />
+                    <Node Type="Channel" RefId="CH-1" Text="Bouton poussoir 3" />
+                    <Node Type="Channel" RefId="CH-2" Text="Bouton poussoir 4" GroupObjectInstances="O-86_R-158 O-85_R-124" />
+                    <Node Type="Channel" RefId="CH-4" Text="Bouton poussoir 5" GroupObjectInstances="O-98_R-229 O-93_R-203" />
+                    <Node Type="Channel" RefId="CH-5" Text="Bouton poussoir 6" GroupObjectInstances="O-118_R-324 O-113_R-310" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:04:32.05952Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-49" Address="75" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_P-WST3xx" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_HP-E05E-11-E2C3" Comment="" Description="ch2" SerialNumber="AAlAFVEd" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T10:44:36.575568Z" LastDownload="2020-12-28T17:04:17.9783261Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" Puid="355">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1332_R-840" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-531857694_R-531857694" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-982276810_R-982277151" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-33_R-50" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1085561504_R-1085561504" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-371008879_R-371008879" Value="5" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-37_R-67" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1262447847_R-1262447847" Value="5" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1378431638_R-1378431638" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-893_R-3839" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-223966364_R-223966364" Value="12" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-699219709_R-699219709" Value="5" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1374273422_R-1374273422" Value="12" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-18_R-1636231488" ChannelId="CH-1470867484" Links="GA-46" />
+                  <ComObjectInstanceRef RefId="O-13_R-173361915" ChannelId="CH-1470867484" Links="GA-47" />
+                  <ComObjectInstanceRef RefId="O-33_R-173361916" ChannelId="CH-1874152011" Links="GA-62" />
+                  <ComObjectInstanceRef RefId="O-132_R-1324979835" ChannelId="CH-711352597" Links="GA-91" />
+                  <ComObjectInstanceRef RefId="O-38_R-1033624302" ChannelId="CH-1874152011" Links="GA-103" />
+                </ComObjectInstanceRefs>
+                <GroupObjectTree GroupObjectInstances="O-4_R-691479710 O-6_R-858138322 O-5_R-982098703 O-18_R-1636231488 O-13_R-173361915 O-33_R-173361916 O-132_R-1324979835">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-1470867484" Text="Bouton poussoir 1" GroupObjectInstances="O-18_R-1636231488 O-13_R-173361915" />
+                    <Node Type="Channel" RefId="CH-1874152011" Text="Bouton poussoir 2" GroupObjectInstances="O-38_R-1033624302 O-33_R-173361916" />
+                    <Node Type="Channel" RefId="CH-711352597" Text="Sonde de température interne" GroupObjectInstances="O-132_R-1324979835" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Informations" />
+                    <Node Type="Channel" RefId="CH-1" Text="Bouton poussoir 3" />
+                    <Node Type="Channel" RefId="CH-2" Text="Bouton poussoir 4" />
+                    <Node Type="Channel" RefId="CH-4" Text="Bouton poussoir 5" />
+                    <Node Type="Channel" RefId="CH-5" Text="Bouton poussoir 6" />
+                    <Node Type="Channel" RefId="CH-486183250" Text="Général" GroupObjectInstances="O-4_R-691479710" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="Gestion des LED" GroupObjectInstances="O-6_R-858138322 O-5_R-982098703" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:04:17.9863288Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-50" Address="74" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_P-WST3xx" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_HP-E05E-11-E2C3" Comment="" Description="salon bv" SerialNumber="AAlAFVE/" ApplicationProgramLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T10:44:36.5748112Z" LastDownload="2020-08-23T16:15:29.6700662Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" Puid="356">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1332_R-840" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-103_R-520" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-1087" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-323_R-1385" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-332_R-1448" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-33_R-50" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1085561504_R-1085561504" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1170361595_R-1170361595" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1307812492_R-1307812492" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1378431638_R-1378431638" Value="1" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-58_R-41" ChannelId="CH-1" Links="GA-7" />
+                  <ComObjectInstanceRef RefId="O-53_R-25" ChannelId="CH-1" Links="GA-8" />
+                  <ComObjectInstanceRef RefId="O-132_R-1324979835" ChannelId="CH-711352597" Links="GA-85" />
+                </ComObjectInstanceRefs>
+                <GroupObjectTree GroupObjectInstances="O-4_R-691479710 O-6_R-858138322 O-5_R-982098703 O-58_R-41 O-53_R-25 O-132_R-1324979835">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-2" Text="Bouton poussoir 4" />
+                    <Node Type="Channel" RefId="CH-4" Text="Bouton poussoir 5" />
+                    <Node Type="Channel" RefId="CH-5" Text="Bouton poussoir 6" />
+                    <Node Type="Channel" RefId="CH-711352597" Text="Sonde de température interne" GroupObjectInstances="O-132_R-1324979835" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Informations" />
+                    <Node Type="Channel" RefId="CH-1470867484" Text="Push-button 1" />
+                    <Node Type="Channel" RefId="CH-1874152011" Text="Push-button 2" />
+                    <Node Type="Channel" RefId="CH-486183250" Text="General" GroupObjectInstances="O-4_R-691479710" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="LED management" GroupObjectInstances="O-6_R-858138322 O-5_R-982098703" />
+                    <Node Type="Channel" RefId="CH-1" Text="Push-button 3" GroupObjectInstances="O-58_R-41 O-53_R-25" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-08-23T16:15:29.6830681Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-51" Address="73" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_P-WST3xx" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_HP-E05E-11-E2C3" Comment="" Description="salon therm" SerialNumber="AAlAE0+X" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-08-23T15:47:59.194677Z" LastDownload="2020-12-28T17:04:05.0491892Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" Puid="357">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1332_R-840" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-103_R-520" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-1087" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-323_R-1385" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-332_R-1448" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-33_R-50" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1085561504_R-1085561504" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1170361595_R-1170361595" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1307812492_R-1307812492" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1378431638_R-1378431638" Value="1" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-58_R-41" ChannelId="CH-1" Links="GA-7" />
+                  <ComObjectInstanceRef RefId="O-53_R-25" ChannelId="CH-1" Links="GA-8" />
+                  <ComObjectInstanceRef RefId="O-132_R-1324979835" ChannelId="CH-711352597" Links="GA-85" />
+                </ComObjectInstanceRefs>
+                <GroupObjectTree GroupObjectInstances="O-4_R-691479710 O-6_R-858138322 O-5_R-982098703 O-58_R-41 O-53_R-25 O-132_R-1324979835">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-1470867484" Text="Bouton poussoir 1" />
+                    <Node Type="Channel" RefId="CH-1874152011" Text="Bouton poussoir 2" />
+                    <Node Type="Channel" RefId="CH-711352597" Text="Sonde de température interne" GroupObjectInstances="O-132_R-1324979835" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Informations" />
+                    <Node Type="Channel" RefId="CH-1" Text="Bouton poussoir 3" GroupObjectInstances="O-58_R-41 O-53_R-25" />
+                    <Node Type="Channel" RefId="CH-2" Text="Bouton poussoir 4" />
+                    <Node Type="Channel" RefId="CH-4" Text="Bouton poussoir 5" />
+                    <Node Type="Channel" RefId="CH-5" Text="Bouton poussoir 6" />
+                    <Node Type="Channel" RefId="CH-486183250" Text="Général" GroupObjectInstances="O-4_R-691479710" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="Gestion des LED" GroupObjectInstances="O-6_R-858138322 O-5_R-982098703" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:04:05.0591909Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-52" Address="72" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_P-WST3xx" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_HP-E05E-11-E2C3" Comment="" Description="buanderie" SerialNumber="AAlAFVAg" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T10:44:36.575568Z" LastDownload="2020-12-28T17:03:46.5077177Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" Puid="358">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1332_R-840" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-531857694_R-531857694" Value="11" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-33_R-50" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-103_R-520" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-108_R-1087" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-323_R-1385" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-332_R-1448" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-982276810_R-982277165" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-371008879_R-371008879" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-893_R-3839" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-926_R-3901" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1101_R-4538" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-1125_R-4600" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-37_R-67" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1173490589_R-1173490589" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1378431638_R-1378431638" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-982276810_R-982276868" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-982276810_R-982276874" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-1603288898_R-1603288898" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-1603288899_R-1603288899" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-913175676_R-913175676" Value="1" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-33_R-173361916" ChannelId="CH-1874152011" Links="GA-37" />
+                  <ComObjectInstanceRef RefId="O-38_R-1636231489" ChannelId="CH-1874152011" Links="GA-36" />
+                  <ComObjectInstanceRef RefId="O-132_R-1324979835" ChannelId="CH-711352597" Links="GA-88" />
+                  <ComObjectInstanceRef RefId="O-18_R-424029910" ChannelId="CH-1470867484" Links="GA-123" />
+                  <ComObjectInstanceRef RefId="O-13_R-1237331022" ChannelId="CH-1470867484" Links="GA-29" />
+                  <ComObjectInstanceRef RefId="O-26_R-997535446" ChannelId="CH-1470867484" Links="GA-28" />
+                </ComObjectInstanceRefs>
+                <GroupObjectTree GroupObjectInstances="O-4_R-691479710 O-6_R-858138322 O-5_R-982098703 O-13_R-173361915 O-58_R-41 O-53_R-25 O-33_R-173361916 O-38_R-1636231489 O-132_R-1324979835 O-18_R-1033624301">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-486183250" Text="General" GroupObjectInstances="O-4_R-691479710" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="LED management" GroupObjectInstances="O-6_R-858138322 O-5_R-982098703" />
+                    <Node Type="Channel" RefId="CH-1470867484" Text="Push-button 1" GroupObjectInstances="O-13_R-1237331022 O-25_R-1237330927 O-18_R-424029910 O-26_R-997535446" />
+                    <Node Type="Channel" RefId="CH-1874152011" Text="Push-button 2" GroupObjectInstances="O-38_R-1636231489 O-33_R-173361916" />
+                    <Node Type="Channel" RefId="CH-711352597" Text="Internal temperature sensor" GroupObjectInstances="O-132_R-1324979835" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Information" />
+                    <Node Type="Channel" RefId="CH-1" Text="Push-button 3" GroupObjectInstances="O-58_R-41 O-53_R-25" />
+                    <Node Type="Channel" RefId="CH-2" Text="Push-button 4" />
+                    <Node Type="Channel" RefId="CH-4" Text="Push-button 5" />
+                    <Node Type="Channel" RefId="CH-5" Text="Push-button 6" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:03:46.5167195Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-53" Address="71" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_P-WST3xx" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20WST3xx-0_HP-E05E-11-E2C3" Comment="" Description="bureau" SerialNumber="AAlAFVE0" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T10:44:36.5748112Z" LastDownload="2020-12-28T17:03:33.4707609Z" LastUsedAPDULength="40" ReadMaxAPDULength="40" Puid="359">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1332_R-840" Value="2" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-715_R-3541" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-713_R-3197" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-33_R-50" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1085561504_R-1085561504" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-893_R-3839" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-926_R-3901" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-952_R-3928" Value="5" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1101_R-4538" Value="3" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_UP-1125_R-4600" Value="0" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1378431638_R-1378431638" Value="1" />
+                  <ParameterInstanceRef RefId="M-0009_A-E05E-11-E2C3_P-1008757149_R-1008757149" Value="4" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-93_R-203" ChannelId="CH-4" Links="GA-35" />
+                  <ComObjectInstanceRef RefId="O-98_R-229" ChannelId="CH-4" Links="GA-34" />
+                  <ComObjectInstanceRef RefId="O-113_R-310" ChannelId="CH-5" Links="GA-25" />
+                  <ComObjectInstanceRef RefId="O-132_R-1324979835" ChannelId="CH-711352597" Links="GA-83" />
+                  <ComObjectInstanceRef RefId="O-118_R-321" Text="Push-button 6" Links="GA-111" />
+                </ComObjectInstanceRefs>
+                <GroupObjectTree GroupObjectInstances="O-4_R-691479710 O-6_R-858138322 O-5_R-982098703 O-93_R-203 O-98_R-229 O-118_R-321 O-113_R-310 O-132_R-1324979835">
+                  <Nodes>
+                    <Node Type="Channel" RefId="CH-486183250" Text="Général" GroupObjectInstances="O-4_R-691479710" />
+                    <Node Type="Channel" RefId="CH-889467777" Text="Gestion des LED" GroupObjectInstances="O-6_R-858138322 O-5_R-982098703" />
+                    <Node Type="Channel" RefId="CH-1470867484" Text="Bouton poussoir 1" />
+                    <Node Type="Channel" RefId="CH-1874152011" Text="Bouton poussoir 2" />
+                    <Node Type="Channel" RefId="CH-711352597" Text="Sonde de température interne" GroupObjectInstances="O-132_R-1324979835" />
+                    <Node Type="Channel" RefId="CH-1297404556" Text="Informations" />
+                    <Node Type="Channel" RefId="CH-1" Text="Bouton poussoir 3" />
+                    <Node Type="Channel" RefId="CH-2" Text="Bouton poussoir 4" />
+                    <Node Type="Channel" RefId="CH-4" Text="Bouton poussoir 5" GroupObjectInstances="O-98_R-229 O-93_R-203" />
+                    <Node Type="Channel" RefId="CH-5" Text="Bouton poussoir 6" GroupObjectInstances="O-118_R-324 O-113_R-310" />
+                  </Nodes>
+                </GroupObjectTree>
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:03:33.4997674Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-54" Address="8" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20TXA207C-1_P-TXA207C" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20TXA207C-1_HP-2033-21-D15F" Comment="" Description="Mod10GAR" SerialNumber="AAkOID3A" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T10:01:15.4334489Z" LastDownload="2020-12-28T17:01:11.9777936Z" LastUsedAPDULength="15" Puid="361">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-0009_A-2033-21-D15F_UP-4340_R-4340" Value="1" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-1_R-1761" Description="garage porte" Links="GA-109" />
+                  <ComObjectInstanceRef RefId="O-4_R-1768" Description="garage porte" Links="GA-107" />
+                  <ComObjectInstanceRef RefId="O-5_R-1255" Description="garage poubelle" Links="GA-106" />
+                  <ComObjectInstanceRef RefId="O-9_R-1257" Description="garage poubelle" Links="GA-118" />
+                  <ComObjectInstanceRef RefId="O-10_R-1358" Description="garage plaf" Links="GA-32 GA-113 GA-124" />
+                  <ComObjectInstanceRef RefId="O-14_R-1360" Description="garage plaf" Links="GA-33" />
+                  <ComObjectInstanceRef RefId="O-15_R-1564" Description="Boucle eau chaude haut" Links="GA-110" />
+                  <ComObjectInstanceRef RefId="O-19_R-1566" Description="Boucle eau chaude haut" Links="GA-108" />
+                  <ComObjectInstanceRef RefId="O-20_R-1663" Description="Boucle eau chaude bas" Links="GA-122" />
+                  <ComObjectInstanceRef RefId="O-24_R-1665" Description="Boucle eau chaude bas" Links="GA-121" />
+                </ComObjectInstanceRefs>
+                <GroupObjectTree GroupObjectInstances="O-113_R-194 O-0_R-1766 O-1_R-1761 O-2_R-1767 O-4_R-1768 O-52_R-1765 O-57_R-1672 O-3_R-1770 O-5_R-1255 O-6_R-3016 O-7_R-1256 O-9_R-1257 O-58_R-1254 O-63_R-1206 O-8_R-3059 O-10_R-1358 O-11_R-1310 O-12_R-1359 O-14_R-1360 O-64_R-1357 O-69_R-1270 O-13_R-1362 O-15_R-1564 O-16_R-1468 O-17_R-1565 O-19_R-1566 O-70_R-1563 O-75_R-1519 O-18_R-3069 O-20_R-1663 O-21_R-1573 O-22_R-1664 O-24_R-1665 O-76_R-1662 O-81_R-1658 O-23_R-2906 O-25_R-3007 O-26_R-2919 O-27_R-3008 O-29_R-3009 O-82_R-3006 O-87_R-2958 O-28_R-3011 O-30_R-3706 O-31_R-3657 O-32_R-3707 O-34_R-3708 O-88_R-3705 O-93_R-3622 O-33_R-3609 O-35_R-3605 O-36_R-3551 O-37_R-3606 O-39_R-3607 O-94_R-3604 O-99_R-3556 O-38_R-3508 O-40_R-3807 O-41_R-3758 O-42_R-3808 O-44_R-3809 O-100_R-3806 O-105_R-3747 O-43_R-3710 O-45_R-3917 O-46_R-3842 O-47_R-3918 O-49_R-3919 O-106_R-3916 O-111_R-3868 O-48_R-3921" />
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:01:11.9937972Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-56" Address="96" Name="" ProductRefId="M-00E8_H-20.20360.20047-1_P-201.209.20200" Hardware2ProgramRefId="M-00E8_H-20.20360.20047-1_HP-0006-12-D130" Comment="" Description="détecteur toilette" SerialNumber="AOgEAEQY" ApplicationProgramLoaded="true" CommunicationPartLoaded="true" IndividualAddressLoaded="true" MediumConfigLoaded="true" ParametersLoaded="true" IsActivityCalculated="true" LastModified="2020-12-26T09:54:25.1479847Z" LastDownload="2020-12-28T17:06:32.4200994Z" LastUsedAPDULength="15" Puid="367">
+                <ParameterInstanceRefs>
+                  <ParameterInstanceRef RefId="M-00E8_A-0006-12-D130_P-16_R-381" Value="120" />
+                </ParameterInstanceRefs>
+                <ComObjectInstanceRefs>
+                  <ComObjectInstanceRef RefId="O-0_R-31" Links="GA-22" />
+                </ComObjectInstanceRefs>
+                <GroupObjectTree GroupObjectInstances="O-0_R-31 O-9_R-10 O-12_R-135" />
+                <Security SequenceNumber="0" SequenceNumberTimestamp="2020-12-28T17:06:32.4451059Z" />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-57" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20TXA114-1_P-TXA114" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20TXA114-1_HP" Comment="" Description="" IsActivityCalculated="true" LastModified="2020-12-26T10:59:38.2486504Z" Puid="377">
+                <Security />
+              </DeviceInstance>
+              <DeviceInstance Id="P-0930-0_DI-58" Address="1" Name="" ProductRefId="M-0009_H-9.20.2F.2F.20TYF120-1-O0001_P-TYF120" Hardware2ProgramRefId="M-0009_H-9.20.2F.2F.20TYF120-1-O0001_HP-7200-02-06EF-O0001" Comment="" Description="" IsActivityCalculated="true" LastModified="2020-12-28T19:06:19.7634569Z" Puid="378">
+                <Security />
+              </DeviceInstance>
+            </Line>
+          </Area>
+        </Topology>
+        <Locations>
+          <Space Type="Building" Id="P-0930-0_BP-1" Name="Maison familiale" Puid="6">
+            <Space Type="BuildingPart" Id="P-0930-0_BP-28" Name="Maison" Puid="222">
+              <Space Type="Floor" Id="P-0930-0_BP-2" Name="Rez-de-chaussée" Puid="7">
+                <Space Type="Room" Id="P-0930-0_BP-3" Name="Salon" Puid="8">
+                  <DeviceInstanceRef RefId="P-0930-0_DI-50" />
+                  <DeviceInstanceRef RefId="P-0930-0_DI-51" />
+                  <Function Id="P-0930-0_F-1" Name="Appliques" Type="FT-2" Puid="31">
+                    <GroupAddressRef Id="P-0930-0_GF-1" Name="" Role="022589d5-b440-413d-bc4b-72c1eb7ab154" RefId="P-0930-0_GA-1" Puid="35" />
+                    <GroupAddressRef Id="P-0930-0_GF-2" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-2" Puid="38" />
+                    <GroupAddressRef Id="P-0930-0_GF-3" Name="" Role="a768076e-7587-4ec3-9095-a14adc7a7c40" RefId="P-0930-0_GA-3" Puid="41" />
+                    <GroupAddressRef Id="P-0930-0_GF-4" Name="" Role="ActualDimmingValue" RefId="P-0930-0_GA-4" Puid="44" />
+                  </Function>
+                  <Function Id="P-0930-0_F-2" Name="Plafonnier" Type="FT-1" Puid="45">
+                    <GroupAddressRef Id="P-0930-0_GF-6" Name="" Role="e5ee2b91-a83a-4fd7-8b30-f8ed71de9880" RefId="P-0930-0_GA-7" Puid="52" />
+                    <GroupAddressRef Id="P-0930-0_GF-7" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-8" Puid="54" />
+                  </Function>
+                  <Function Id="P-0930-0_F-4" Name="Light room switch" Type="FT-1" Puid="55">
+                    <GroupAddressRef Id="P-0930-0_GF-8" Name="" Role="458401e5-fe6a-41ad-b6a9-a31fdc14106e" RefId="P-0930-0_GA-9" Puid="57" />
+                  </Function>
+                </Space>
+                <Space Type="Room" Id="P-0930-0_BP-4" Name="Cuisine" Puid="9">
+                  <DeviceInstanceRef RefId="P-0930-0_DI-2" />
+                  <DeviceInstanceRef RefId="P-0930-0_DI-7" />
+                  <DeviceInstanceRef RefId="P-0930-0_DI-8" />
+                  <DeviceInstanceRef RefId="P-0930-0_DI-9" />
+                  <Function Id="P-0930-0_F-5" Name="ilot" Type="FT-1" Puid="58">
+                    <GroupAddressRef Id="P-0930-0_GF-9" Name="" Role="42fc0a62-ab06-4f63-98b0-ec144a3d83ba" RefId="P-0930-0_GA-10" Puid="60" />
+                    <GroupAddressRef Id="P-0930-0_GF-10" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-11" Puid="62" />
+                  </Function>
+                  <Function Id="P-0930-0_F-6" Name="table" Type="FT-1" Puid="63">
+                    <GroupAddressRef Id="P-0930-0_GF-11" Name="" Role="c2b9fd16-b473-4670-8834-8af0dd13ce20" RefId="P-0930-0_GA-12" Puid="65" />
+                    <GroupAddressRef Id="P-0930-0_GF-12" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-13" Puid="67" />
+                  </Function>
+                  <Function Id="P-0930-0_F-7" Name="plan de travail" Type="FT-1" Puid="68">
+                    <GroupAddressRef Id="P-0930-0_GF-13" Name="" Role="fe2efcd2-d821-4f66-b354-d576b008ea95" RefId="P-0930-0_GA-14" Puid="70" />
+                    <GroupAddressRef Id="P-0930-0_GF-14" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-15" Puid="72" />
+                  </Function>
+                  <Function Id="P-0930-0_F-8" Name="Light room switch" Type="FT-1" Puid="73">
+                    <GroupAddressRef Id="P-0930-0_GF-15" Name="" Role="28cbb00c-9e65-466b-82a6-2e8216eecffc" RefId="P-0930-0_GA-16" Puid="75" />
+                  </Function>
+                </Space>
+                <Space Type="Room" Id="P-0930-0_BP-5" Name="Salle à manger" Puid="10">
+                  <DeviceInstanceRef RefId="P-0930-0_DI-13" />
+                  <DeviceInstanceRef RefId="P-0930-0_DI-36" />
+                  <Function Id="P-0930-0_F-9" Name="Plafonnier" Type="FT-1" Puid="76">
+                    <GroupAddressRef Id="P-0930-0_GF-16" Name="" Role="c5a5840d-ce96-48bf-9dc0-e3335422d3af" RefId="P-0930-0_GA-17" Puid="78" />
+                    <GroupAddressRef Id="P-0930-0_GF-17" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-18" Puid="80" />
+                  </Function>
+                  <Function Id="P-0930-0_F-10" Name="Appliques" Type="FT-1" Puid="81">
+                    <GroupAddressRef Id="P-0930-0_GF-18" Name="" Role="3dfb2bfa-e83f-43c7-aeff-98e767245fcd" RefId="P-0930-0_GA-19" Puid="83" />
+                    <GroupAddressRef Id="P-0930-0_GF-19" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-20" Puid="85" />
+                  </Function>
+                  <Function Id="P-0930-0_F-11" Name="Light room switch" Type="FT-1" Puid="86">
+                    <GroupAddressRef Id="P-0930-0_GF-20" Name="" Role="87445d39-d286-4580-8334-3a1f1748448c" RefId="P-0930-0_GA-21" Puid="88" />
+                  </Function>
+                </Space>
+                <Space Type="Room" Id="P-0930-0_BP-6" Name="Toilette visiteurs" Puid="11">
+                  <DeviceInstanceRef RefId="P-0930-0_DI-56" />
+                  <Function Id="P-0930-0_F-12" Name="Plafonnier" Type="FT-1" Puid="89">
+                    <GroupAddressRef Id="P-0930-0_GF-21" Name="" Role="fbd52e92-2c50-48bb-b2b7-5977787b8fb1" RefId="P-0930-0_GA-22" Puid="91" />
+                    <GroupAddressRef Id="P-0930-0_GF-22" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-23" Puid="93" />
+                  </Function>
+                </Space>
+                <Space Type="Room" Id="P-0930-0_BP-7" Name="Hall de jour" Puid="12">
+                  <Space Type="DistributionBoard" Id="P-0930-0_BP-38" Name="sous-escalier" Puid="379" />
+                  <DeviceInstanceRef RefId="P-0930-0_DI-45" />
+                  <DeviceInstanceRef RefId="P-0930-0_DI-46" />
+                  <Function Id="P-0930-0_F-13" Name="Appliques" Type="FT-1" Puid="94">
+                    <GroupAddressRef Id="P-0930-0_GF-23" Name="" Role="cb0ebe90-de90-4a57-befb-7924bfb82bcd" RefId="P-0930-0_GA-24" Puid="96" />
+                    <GroupAddressRef Id="P-0930-0_GF-24" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-25" Puid="98" />
+                  </Function>
+                </Space>
+                <Space Type="Room" Id="P-0930-0_BP-8" Name="Cellier" Puid="13">
+                  <DeviceInstanceRef RefId="P-0930-0_DI-39" />
+                  <Function Id="P-0930-0_F-14" Name="Plafonnier" Type="FT-1" Puid="99">
+                    <GroupAddressRef Id="P-0930-0_GF-25" Name="" Role="5eae0463-7fdb-4185-9f9c-a6b20141ba33" RefId="P-0930-0_GA-26" Puid="101" />
+                    <GroupAddressRef Id="P-0930-0_GF-26" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-27" Puid="103" />
+                  </Function>
+                </Space>
+                <Space Type="Room" Id="P-0930-0_BP-9" Name="Buanderie" Puid="14">
+                  <DeviceInstanceRef RefId="P-0930-0_DI-38" />
+                  <DeviceInstanceRef RefId="P-0930-0_DI-52" />
+                  <Function Id="P-0930-0_F-15" Name="Plafonnier" Type="FT-1" Puid="104">
+                    <GroupAddressRef Id="P-0930-0_GF-27" Name="" Role="0745c03a-6e8e-43f6-93e8-8df7a643930a" RefId="P-0930-0_GA-28" Puid="106" />
+                    <GroupAddressRef Id="P-0930-0_GF-28" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-29" Puid="108" />
+                  </Function>
+                </Space>
+                <Space Type="Room" Id="P-0930-0_BP-10" Name="Escalier" Puid="15">
+                  <Function Id="P-0930-0_F-16" Name="appliques" Type="FT-1" Puid="109">
+                    <GroupAddressRef Id="P-0930-0_GF-29" Name="" Role="65c32cfc-03cb-4f67-84ce-b84dce67e432" RefId="P-0930-0_GA-30" Puid="111" />
+                    <GroupAddressRef Id="P-0930-0_GF-30" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-31" Puid="113" />
+                  </Function>
+                </Space>
+                <Space Type="Room" Id="P-0930-0_BP-11" Name="Garage" Puid="16">
+                  <Space Type="DistributionBoard" Id="P-0930-0_BP-30" Name="Armoire GAR" Puid="242">
+                    <DeviceInstanceRef RefId="P-0930-0_DI-54" />
+                  </Space>
+                  <DeviceInstanceRef RefId="P-0930-0_DI-40" />
+                  <DeviceInstanceRef RefId="P-0930-0_DI-44" />
+                  <Function Id="P-0930-0_F-17" Name="Plafonnier" Type="FT-1" Puid="114">
+                    <GroupAddressRef Id="P-0930-0_GF-31" Name="" Role="84c38230-1815-4d81-9189-3ac8b3ed67b0" RefId="P-0930-0_GA-32" Puid="116" />
+                    <GroupAddressRef Id="P-0930-0_GF-32" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-33" Puid="118" />
+                  </Function>
+                </Space>
+                <Space Type="Room" Id="P-0930-0_BP-12" Name="Bureau" Puid="17">
+                  <DeviceInstanceRef RefId="P-0930-0_DI-53" />
+                  <Function Id="P-0930-0_F-18" Name="plafonnier" Type="FT-1" Puid="119">
+                    <GroupAddressRef Id="P-0930-0_GF-33" Name="" Role="228b756d-19ef-4194-9c5d-29be6394d0ab" RefId="P-0930-0_GA-34" Puid="121" />
+                    <GroupAddressRef Id="P-0930-0_GF-34" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-35" Puid="123" />
+                  </Function>
+                </Space>
+                <Space Type="Room" Id="P-0930-0_BP-13" Name="Couloir" Puid="18">
+                  <Space Type="DistributionBoard" Id="P-0930-0_BP-29" Name="Armoire REZ" Puid="241">
+                    <DeviceInstanceRef RefId="P-0930-0_DI-34" />
+                    <DeviceInstanceRef RefId="P-0930-0_DI-57" />
+                  </Space>
+                  <Function Id="P-0930-0_F-19" Name="Plafonnier" Type="FT-1" Puid="124">
+                    <GroupAddressRef Id="P-0930-0_GF-35" Name="" Role="f18c38c7-0b1e-44a2-afdb-3b6cf429c95d" RefId="P-0930-0_GA-36" Puid="126" />
+                    <GroupAddressRef Id="P-0930-0_GF-36" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-37" Puid="128" />
+                  </Function>
+                </Space>
+                <Space Type="Room" Id="P-0930-0_BP-14" Name="Vestiaire" Puid="19">
+                  <Function Id="P-0930-0_F-20" Name="Plafonnier" Type="FT-1" Puid="129">
+                    <GroupAddressRef Id="P-0930-0_GF-37" Name="" Role="9bccf6e1-f089-4be6-a12a-ad6c78c571c5" RefId="P-0930-0_GA-38" Puid="131" />
+                    <GroupAddressRef Id="P-0930-0_GF-38" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-39" Puid="133" />
+                  </Function>
+                </Space>
+              </Space>
+              <Space Type="Floor" Id="P-0930-0_BP-15" Name="Etage supérieur" Puid="20">
+                <Space Type="Room" Id="P-0930-0_BP-16" Name="Toilette" Puid="21">
+                  <Function Id="P-0930-0_F-21" Name="Plafonnier" Type="FT-1" Puid="134">
+                    <GroupAddressRef Id="P-0930-0_GF-39" Name="" Role="f1744d3c-6b97-4aee-a80d-32f87fa411e7" RefId="P-0930-0_GA-40" Puid="136" />
+                    <GroupAddressRef Id="P-0930-0_GF-40" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-41" Puid="138" />
+                  </Function>
+                </Space>
+                <Space Type="Room" Id="P-0930-0_BP-17" Name="Chambre 3" Puid="22">
+                  <DeviceInstanceRef RefId="P-0930-0_DI-48" />
+                  <Function Id="P-0930-0_F-22" Name="Plafonnier" Type="FT-1" Puid="139">
+                    <GroupAddressRef Id="P-0930-0_GF-41" Name="" Role="233fd8af-6a72-47d6-a581-a419d73a82ae" RefId="P-0930-0_GA-42" Puid="141" />
+                    <GroupAddressRef Id="P-0930-0_GF-42" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-43" Puid="143" />
+                  </Function>
+                </Space>
+                <Space Type="Room" Id="P-0930-0_BP-18" Name="Chambre 1" Puid="23">
+                  <DeviceInstanceRef RefId="P-0930-0_DI-42" />
+                  <DeviceInstanceRef RefId="P-0930-0_DI-43" />
+                  <Function Id="P-0930-0_F-23" Name="Plafonnier" Type="FT-1" Puid="144">
+                    <GroupAddressRef Id="P-0930-0_GF-43" Name="" Role="e00ecd15-6c91-4b77-a365-5e5a7c0dc749" RefId="P-0930-0_GA-44" Puid="146" />
+                    <GroupAddressRef Id="P-0930-0_GF-44" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-45" Puid="148" />
+                  </Function>
+                </Space>
+                <Space Type="Room" Id="P-0930-0_BP-19" Name="Chambre 2" Puid="24">
+                  <DeviceInstanceRef RefId="P-0930-0_DI-49" />
+                  <Function Id="P-0930-0_F-24" Name="Plafonnier" Type="FT-1" Puid="149">
+                    <GroupAddressRef Id="P-0930-0_GF-45" Name="" Role="71de2fdf-c595-49d1-8443-2783fae4e36b" RefId="P-0930-0_GA-46" Puid="151" />
+                    <GroupAddressRef Id="P-0930-0_GF-46" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-47" Puid="153" />
+                  </Function>
+                </Space>
+                <Space Type="Room" Id="P-0930-0_BP-20" Name="Salle de bain" Puid="25">
+                  <DeviceInstanceRef RefId="P-0930-0_DI-29" />
+                  <DeviceInstanceRef RefId="P-0930-0_DI-30" />
+                  <DeviceInstanceRef RefId="P-0930-0_DI-31" />
+                  <Function Id="P-0930-0_F-25" Name="Vasque gauche" Type="FT-2" Puid="154">
+                    <GroupAddressRef Id="P-0930-0_GF-47" Name="" Role="105e28de-91fa-455a-9905-39e918bd4472" RefId="P-0930-0_GA-48" Puid="156" />
+                    <GroupAddressRef Id="P-0930-0_GF-48" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-49" Puid="158" />
+                    <GroupAddressRef Id="P-0930-0_GF-49" Name="" Role="aace4bcf-f61d-4da5-88a9-e827cf6225ae" RefId="P-0930-0_GA-50" Puid="160" />
+                    <GroupAddressRef Id="P-0930-0_GF-50" Name="" Role="ActualDimmingValue" RefId="P-0930-0_GA-51" Puid="162" />
+                  </Function>
+                  <Function Id="P-0930-0_F-26" Name="Plafonnier" Type="FT-1" Puid="163">
+                    <GroupAddressRef Id="P-0930-0_GF-51" Name="" Role="6dd10fbb-f7ee-48d4-b8cc-e27c666aec24" RefId="P-0930-0_GA-52" Puid="165" />
+                    <GroupAddressRef Id="P-0930-0_GF-52" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-53" Puid="167" />
+                  </Function>
+                  <Function Id="P-0930-0_F-27" Name="Vasque droite" Type="FT-2" Puid="168">
+                    <GroupAddressRef Id="P-0930-0_GF-53" Name="" Role="c633e4ec-e35e-4e94-8240-b94224d4d6ce" RefId="P-0930-0_GA-54" Puid="170" />
+                    <GroupAddressRef Id="P-0930-0_GF-54" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-55" Puid="172" />
+                    <GroupAddressRef Id="P-0930-0_GF-55" Name="" Role="4d963a74-09cd-470d-9613-36f11c075bc7" RefId="P-0930-0_GA-56" Puid="174" />
+                    <GroupAddressRef Id="P-0930-0_GF-56" Name="" Role="ActualDimmingValue" RefId="P-0930-0_GA-57" Puid="176" />
+                  </Function>
+                  <Function Id="P-0930-0_F-28" Name="Light room switch" Type="FT-1" Puid="177">
+                    <GroupAddressRef Id="P-0930-0_GF-57" Name="" Role="469eb263-cac6-413a-9469-1637ef71089d" RefId="P-0930-0_GA-58" Puid="179" />
+                    <GroupAddressRef Id="P-0930-0_GF-58" Name="" Role="81a0636b-7334-4914-9fb6-fe459f5cd42d" RefId="P-0930-0_GA-59" Puid="181" />
+                    <GroupAddressRef Id="P-0930-0_GF-59" Name="" Role="784fa2e7-e4d5-4fa8-95d5-d954db11a45b" RefId="P-0930-0_GA-60" Puid="183" />
+                  </Function>
+                </Space>
+                <Space Type="Room" Id="P-0930-0_BP-21" Name="Hall de nuit" Puid="26">
+                  <DeviceInstanceRef RefId="P-0930-0_DI-47" />
+                  <Function Id="P-0930-0_F-29" Name="Appliques" Type="FT-1" Puid="184">
+                    <GroupAddressRef Id="P-0930-0_GF-60" Name="" Role="c9eaebf9-ed2a-4e89-a47d-7cf98d079e6c" RefId="P-0930-0_GA-61" Puid="186" />
+                    <GroupAddressRef Id="P-0930-0_GF-61" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-62" Puid="188" />
+                  </Function>
+                </Space>
+                <Space Type="Room" Id="P-0930-0_BP-22" Name="Grenier aménageable" Puid="27">
+                  <Space Type="DistributionBoard" Id="P-0930-0_BP-26" Name="Armoire ETA" Puid="219">
+                    <DeviceInstanceRef RefId="P-0930-0_DI-21" />
+                    <DeviceInstanceRef RefId="P-0930-0_DI-25" />
+                    <DeviceInstanceRef RefId="P-0930-0_DI-37" />
+                    <DeviceInstanceRef RefId="P-0930-0_DI-58" />
+                  </Space>
+                  <Function Id="P-0930-0_F-30" Name="Plafonnier" Type="FT-1" Puid="189">
+                    <GroupAddressRef Id="P-0930-0_GF-62" Name="" Role="a9a80035-20f9-4e57-adf0-22cf161d4381" RefId="P-0930-0_GA-63" Puid="191" />
+                    <GroupAddressRef Id="P-0930-0_GF-63" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-64" Puid="193" />
+                  </Function>
+                </Space>
+                <Space Type="Room" Id="P-0930-0_BP-23" Name="Dressing" Puid="28">
+                  <DeviceInstanceRef RefId="P-0930-0_DI-41" />
+                  <Function Id="P-0930-0_F-31" Name="Plafonnier" Type="FT-1" Puid="194">
+                    <GroupAddressRef Id="P-0930-0_GF-64" Name="" Role="d2d64d93-5994-4bb6-8eed-257431e8714f" RefId="P-0930-0_GA-65" Puid="196" />
+                    <GroupAddressRef Id="P-0930-0_GF-65" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-66" Puid="198" />
+                  </Function>
+                </Space>
+              </Space>
+              <Space Type="Floor" Id="P-0930-0_BP-24" Name="Grenier" Puid="29">
+                <Space Type="Room" Id="P-0930-0_BP-25" Name="Grenier" Puid="30">
+                  <Space Type="DistributionBoard" Id="P-0930-0_BP-31" Name="Armoire GRE" Puid="243">
+                    <DeviceInstanceRef RefId="P-0930-0_DI-22" />
+                  </Space>
+                  <Function Id="P-0930-0_F-32" Name="Plafonnier" Type="FT-1" Puid="199">
+                    <GroupAddressRef Id="P-0930-0_GF-66" Name="" Role="0bb2cf53-a970-4caf-9552-c6bf88a3bf80" RefId="P-0930-0_GA-67" Puid="201" />
+                    <GroupAddressRef Id="P-0930-0_GF-67" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-68" Puid="203" />
+                  </Function>
+                </Space>
+              </Space>
+            </Space>
+            <Space Type="BuildingPart" Id="P-0930-0_BP-32" Name="Extérieur" Puid="266">
+              <Space Type="Room" Id="P-0930-0_BP-33" Name="Devanture" Puid="273">
+                <Function Id="P-0930-0_F-34" Name="Phare ext porte" Type="FT-1" Description="Phare ext porte" Puid="278">
+                  <GroupAddressRef Id="P-0930-0_GF-70" Name="" Role="SwitchOnOff" RefId="P-0930-0_GA-78" Puid="282" />
+                  <GroupAddressRef Id="P-0930-0_GF-71" Name="" Role="InfoOnOff" RefId="P-0930-0_GA-79" Puid="283" />
+                </Function>
+              </Space>
+              <Space Type="Room" Id="P-0930-0_BP-34" Name="Latéral passage" Puid="274" />
+              <Space Type="Room" Id="P-0930-0_BP-35" Name="Latéral terrasse" Puid="275" />
+              <Space Type="Room" Id="P-0930-0_BP-36" Name="Jardin" Puid="276" />
+              <Space Type="Room" Id="P-0930-0_BP-37" Name="Terrasse couverte" Puid="277" />
+            </Space>
+            <Function Id="P-0930-0_F-3" Name="Eclairage central" Type="FT-1" Puid="47" />
+          </Space>
+        </Locations>
+        <GroupAddresses>
+          <GroupRanges>
+            <GroupRange Id="P-0930-0_GR-1" RangeStart="2048" RangeEnd="4095" Name="Eclairage" Puid="32">
+              <GroupRange Id="P-0930-0_GR-2" RangeStart="2304" RangeEnd="2559" Name="On/Off" Puid="33">
+                <GroupAddress Id="P-0930-0_GA-1" Address="2305" Name="Salon Appliques commutation" Description="Salon Appliques" DatapointType="DPST-1-1" Puid="34" />
+                <GroupAddress Id="P-0930-0_GA-7" Address="2306" Name="Salon Plafonnier commutation" Description="Salon Plafonnier" DatapointType="DPST-1-1" Puid="51" />
+                <GroupAddress Id="P-0930-0_GA-10" Address="2311" Name="Cuisine ilot commutation" Description="Cuisine ilot" DatapointType="DPST-1-1" Puid="59" />
+                <GroupAddress Id="P-0930-0_GA-12" Address="2312" Name="Cuisine table commutation" Description="Cuisine table" DatapointType="DPST-1-1" Puid="64" />
+                <GroupAddress Id="P-0930-0_GA-14" Address="2313" Name="Cuisine plan de travail commutation" Description="Cuisine plan de travail" DatapointType="DPST-1-1" Puid="69" />
+                <GroupAddress Id="P-0930-0_GA-17" Address="2319" Name="Salle à manger Plafonnier commutation" Description="Salle à manger Plafonnier" DatapointType="DPST-1-1" Puid="77" />
+                <GroupAddress Id="P-0930-0_GA-19" Address="2320" Name="Salle à manger Appliques commutation" Description="Salle à manger Appliques" DatapointType="DPST-1-1" Puid="82" />
+                <GroupAddress Id="P-0930-0_GA-22" Address="2326" Name="Toilette visiteurs Plafonnier commutation" Description="Toilette visiteurs Plafonnier" DatapointType="DPST-1-1" Puid="90" />
+                <GroupAddress Id="P-0930-0_GA-24" Address="2327" Name="Hall de jour Appliques commutation" Description="Hall de jour Appliques" DatapointType="DPST-1-1" Puid="95" />
+                <GroupAddress Id="P-0930-0_GA-26" Address="2328" Name="Cellier Plafonnier commutation" Description="Cellier Plafonnier" DatapointType="DPST-1-1" Puid="100" />
+                <GroupAddress Id="P-0930-0_GA-28" Address="2329" Name="Buanderie Plafonnier commutation" Description="Buanderie Plafonnier" DatapointType="DPST-1-1" Puid="105" />
+                <GroupAddress Id="P-0930-0_GA-30" Address="2330" Name="Escalier appliques commutation" Description="Escalier appliques" Puid="110" />
+                <GroupAddress Id="P-0930-0_GA-32" Address="2331" Name="Garage Plafonnier commutation" Description="Garage Plafonnier" DatapointType="DPST-1-1" Puid="115" />
+                <GroupAddress Id="P-0930-0_GA-34" Address="2332" Name="Bureau plafonnier commutation" Description="Bureau plafonnier" DatapointType="DPST-1-1" Puid="120" />
+                <GroupAddress Id="P-0930-0_GA-36" Address="2333" Name="Couloir Plafonnier commutation" Description="Couloir Plafonnier" DatapointType="DPST-1-1" Puid="125" />
+                <GroupAddress Id="P-0930-0_GA-38" Address="2334" Name="Vestiaire Plafonnier commutation" Description="Vestiaire Plafonnier" DatapointType="DPST-1-1" Puid="130" />
+                <GroupAddress Id="P-0930-0_GA-40" Address="2335" Name="Toilette ETA Plafonnier commutation" Description="Toilette ETA Plafonnier" DatapointType="DPST-1-1" Puid="135" />
+                <GroupAddress Id="P-0930-0_GA-42" Address="2336" Name="Chambre 3 Plafonnier commutation" Description="Chambre 3 Plafonnier" DatapointType="DPST-1-1" Puid="140" />
+                <GroupAddress Id="P-0930-0_GA-44" Address="2337" Name="Chambre 1 Plafonnier commutation" Description="Chambre 1 Plafonnier" DatapointType="DPST-1-1" Puid="145" />
+                <GroupAddress Id="P-0930-0_GA-46" Address="2338" Name="Chambre 2 Plafonnier commutation" Description="Chambre 2 Plafonnier" DatapointType="DPST-1-1" Puid="150" />
+                <GroupAddress Id="P-0930-0_GA-48" Address="2339" Name="Salle de bain Vasque gauche commutation" Description="Salle de bain Vasque gauche" DatapointType="DPST-1-1" Puid="155" />
+                <GroupAddress Id="P-0930-0_GA-52" Address="2340" Name="Salle de bain Plafonnier commutation" Description="Salle de bain Plafonnier" DatapointType="DPST-1-1" Puid="164" />
+                <GroupAddress Id="P-0930-0_GA-54" Address="2341" Name="Salle de bain Vasque droite commutation" Description="Salle de bain Vasque droite" DatapointType="DPST-1-1" Puid="169" />
+                <GroupAddress Id="P-0930-0_GA-61" Address="2347" Name="Hall de nuit Appliques commutation" Description="Hall de nuit Appliques" DatapointType="DPST-1-1" Puid="185" />
+                <GroupAddress Id="P-0930-0_GA-63" Address="2348" Name="Grenier aménageable Plafonnier commutation" Description="Grenier aménageable Plafonnier" DatapointType="DPST-1-1" Puid="190" />
+                <GroupAddress Id="P-0930-0_GA-65" Address="2349" Name="Dressing Plafonnier commutation" Description="Dressing Plafonnier" DatapointType="DPST-1-1" Puid="195" />
+                <GroupAddress Id="P-0930-0_GA-67" Address="2350" Name="Grenier Plafonnier commutation" Description="Grenier Plafonnier" DatapointType="DPST-1-1" Puid="200" />
+                <GroupAddress Id="P-0930-0_GA-78" Address="2307" Name="Devanture Phare ext porte commutation" Description="Devanture Phare ext porte" DatapointType="DPST-1-1" Puid="280" />
+                <GroupAddress Id="P-0930-0_GA-106" Address="2351" Name="Garage poubelle" DatapointType="DPST-1-1" Puid="325" />
+              </GroupRange>
+              <GroupRange Id="P-0930-0_GR-3" RangeStart="3072" RangeEnd="3327" Name="Etat" Puid="36">
+                <GroupAddress Id="P-0930-0_GA-2" Address="3073" Name="Salon Appliques statut" Description="Salon Appliques" DatapointType="DPST-1-1" Puid="37" />
+                <GroupAddress Id="P-0930-0_GA-8" Address="3074" Name="Salon Plafonnier statut" Description="Salon Plafonnier" DatapointType="DPST-1-1" Puid="53" />
+                <GroupAddress Id="P-0930-0_GA-11" Address="3079" Name="Cuisine ilot statut" Description="Cuisine ilot" DatapointType="DPST-1-1" Puid="61" />
+                <GroupAddress Id="P-0930-0_GA-13" Address="3080" Name="Cuisine table statut" Description="Cuisine table" DatapointType="DPST-1-1" Puid="66" />
+                <GroupAddress Id="P-0930-0_GA-15" Address="3081" Name="Cuisine plan de travail statut" Description="Cuisine plan de travail" DatapointType="DPST-1-1" Puid="71" />
+                <GroupAddress Id="P-0930-0_GA-18" Address="3087" Name="Salle à manger Plafonnier statut" Description="Salle à manger Plafonnier" DatapointType="DPST-1-1" Puid="79" />
+                <GroupAddress Id="P-0930-0_GA-20" Address="3088" Name="Salle à manger Appliques statut" Description="Salle à manger Appliques" DatapointType="DPST-1-1" Puid="84" />
+                <GroupAddress Id="P-0930-0_GA-23" Address="3094" Name="Toilette visiteurs Plafonnier statut" Description="Toilette visiteurs Plafonnier" DatapointType="DPST-1-1" Puid="92" />
+                <GroupAddress Id="P-0930-0_GA-25" Address="3095" Name="Hall de jour Appliques statut" Description="Hall de jour Appliques" DatapointType="DPST-1-1" Puid="97" />
+                <GroupAddress Id="P-0930-0_GA-27" Address="3096" Name="Cellier Plafonnier statut" Description="Cellier Plafonnier" DatapointType="DPST-1-1" Puid="102" />
+                <GroupAddress Id="P-0930-0_GA-29" Address="3097" Name="Buanderie Plafonnier statut" Description="Buanderie Plafonnier" DatapointType="DPST-1-1" Puid="107" />
+                <GroupAddress Id="P-0930-0_GA-31" Address="3098" Name="Escalier appliques statut" Description="Escalier appliques" DatapointType="DPST-1-1" Puid="112" />
+                <GroupAddress Id="P-0930-0_GA-33" Address="3099" Name="Garage Plafonnier statut" Description="Garage Plafonnier" DatapointType="DPST-1-1" Puid="117" />
+                <GroupAddress Id="P-0930-0_GA-35" Address="3100" Name="Bureau plafonnier statut" Description="Bureau plafonnier" DatapointType="DPST-1-1" Puid="122" />
+                <GroupAddress Id="P-0930-0_GA-37" Address="3101" Name="Couloir Plafonnier statut" Description="Couloir Plafonnier" DatapointType="DPST-1-1" Puid="127" />
+                <GroupAddress Id="P-0930-0_GA-39" Address="3102" Name="Vestiaire Plafonnier statut" Description="Vestiaire Plafonnier" DatapointType="DPST-1-1" Puid="132" />
+                <GroupAddress Id="P-0930-0_GA-41" Address="3103" Name="Toilette ETA Plafonnier statut" Description="Toilette ETA Plafonnier" DatapointType="DPST-1-1" Puid="137" />
+                <GroupAddress Id="P-0930-0_GA-43" Address="3104" Name="Chambre 3 Plafonnier statut" Description="Chambre 3 Plafonnier" DatapointType="DPST-1-1" Puid="142" />
+                <GroupAddress Id="P-0930-0_GA-45" Address="3105" Name="Chambre 1 Plafonnier statut" Description="Chambre 1 Plafonnier" DatapointType="DPST-1-1" Puid="147" />
+                <GroupAddress Id="P-0930-0_GA-47" Address="3106" Name="Chambre 2 Plafonnier statut" Description="Chambre 2 Plafonnier" DatapointType="DPST-1-1" Puid="152" />
+                <GroupAddress Id="P-0930-0_GA-49" Address="3107" Name="Salle de bain Vasque gauche statut" Description="Salle de bain Vasque gauche" DatapointType="DPST-1-1" Puid="157" />
+                <GroupAddress Id="P-0930-0_GA-53" Address="3108" Name="Salle de bain Plafonnier statut" Description="Salle de bain Plafonnier" DatapointType="DPST-1-1" Puid="166" />
+                <GroupAddress Id="P-0930-0_GA-55" Address="3109" Name="Salle de bain Vasque droite statut" Description="Salle de bain Vasque droite" DatapointType="DPST-1-1" Puid="171" />
+                <GroupAddress Id="P-0930-0_GA-62" Address="3115" Name="Hall de nuit Appliques statut" Description="Hall de nuit Appliques" DatapointType="DPST-1-1" Puid="187" />
+                <GroupAddress Id="P-0930-0_GA-64" Address="3116" Name="Grenier aménageable Plafonnier statut" Description="Grenier aménageable Plafonnier" DatapointType="DPST-1-1" Puid="192" />
+                <GroupAddress Id="P-0930-0_GA-66" Address="3117" Name="Dressing Plafonnier statut" Description="Dressing Plafonnier" DatapointType="DPST-1-1" Puid="197" />
+                <GroupAddress Id="P-0930-0_GA-68" Address="3118" Name="Grenier Plafonnier statut" Description="Grenier Plafonnier" DatapointType="DPST-1-1" Puid="202" />
+                <GroupAddress Id="P-0930-0_GA-79" Address="3075" Name="Devanture Phare ext porte statut" Description="Devanture Phare ext porte" DatapointType="DPST-1-1" Puid="281" />
+                <GroupAddress Id="P-0930-0_GA-118" Address="3119" Name="Garage poubelle statut" DatapointType="DPST-1-1" Puid="341" />
+              </GroupRange>
+              <GroupRange Id="P-0930-0_GR-4" RangeStart="2560" RangeEnd="2815" Name="Variation" Puid="39">
+                <GroupAddress Id="P-0930-0_GA-3" Address="2561" Name="Salon Appliques atténuation" Description="Salon Appliques" DatapointType="DPST-3-7" Puid="40" />
+                <GroupAddress Id="P-0930-0_GA-50" Address="2595" Name="Salle de bain Vasque gauche atténuation" Description="Salle de bain Vasque gauche" DatapointType="DPST-3-7" Puid="159" />
+                <GroupAddress Id="P-0930-0_GA-56" Address="2597" Name="Salle de bain Vasque droite atténuation" Description="Salle de bain Vasque droite" DatapointType="DPST-3-7" Puid="173" />
+                <GroupAddress Id="P-0930-0_GA-105" Address="2560" Name="Cuisine ilôt atténuation" DatapointType="DPST-3-7" Puid="324" />
+              </GroupRange>
+              <GroupRange Id="P-0930-0_GR-5" RangeStart="2816" RangeEnd="3071" Name="Valeur" Puid="42">
+                <GroupAddress Id="P-0930-0_GA-4" Address="2817" Name="Salon Appliques valeur" Description="Salon Appliques" DatapointType="DPST-5-1" Puid="43" />
+                <GroupAddress Id="P-0930-0_GA-51" Address="2851" Name="Salle de bain Vasque gauche valeur" Description="Salle de bain Vasque gauche" DatapointType="DPST-5-1" Puid="161" />
+                <GroupAddress Id="P-0930-0_GA-57" Address="2853" Name="Salle de bain Vasque droite valeur" Description="Salle de bain Vasque droite" DatapointType="DPST-5-1" Puid="175" />
+                <GroupAddress Id="P-0930-0_GA-104" Address="2823" Name="Cuisine ilôt valeur" Puid="323" />
+              </GroupRange>
+              <GroupRange Id="P-0930-0_GR-6" RangeStart="2048" RangeEnd="2303" Name="groupement" Puid="46">
+                <GroupAddress Id="P-0930-0_GA-9" Address="2052" Name="Salon Commutateur de lumière de pièce" Description="Salon Light room switch" Central="true" Puid="56" />
+                <GroupAddress Id="P-0930-0_GA-16" Address="2053" Name="Cuisine Commutateur de lumière de pièce" Description="Cuisine Light room switch" Central="true" DatapointType="DPST-1-1" Puid="74" />
+                <GroupAddress Id="P-0930-0_GA-21" Address="2054" Name="Salle à manger Commutateur de lumière de pièce" Description="Salle à manger Light room switch" Central="true" Puid="87" />
+                <GroupAddress Id="P-0930-0_GA-58" Address="2055" Name="Salle de bain Commutateur de lumière de pièce" Description="Salle de bain Light room switch" Central="true" DatapointType="DPST-1-1" Puid="178" />
+                <GroupAddress Id="P-0930-0_GA-59" Address="2056" Name="Salle de bain Light room dimming" Description="Salle de bain Light room switch" Central="true" Puid="180" />
+                <GroupAddress Id="P-0930-0_GA-60" Address="2057" Name="Salle de bain Light room value" Description="Salle de bain Light room switch" Central="true" Puid="182" />
+                <GroupAddress Id="P-0930-0_GA-113" Address="2048" Name="Commutateur de lumière central REZ" DatapointType="DPST-1-1" Puid="335" />
+                <GroupAddress Id="P-0930-0_GA-114" Address="2049" Name="Commutateur de lumière central ETA" DatapointType="DPST-1-1" Puid="336" />
+                <GroupAddress Id="P-0930-0_GA-115" Address="2050" Name="Commutateur de lumière central GRE" DatapointType="DPST-1-1" Puid="337" />
+                <GroupAddress Id="P-0930-0_GA-116" Address="2051" Name="Commutateur de lumière central EXT" Puid="338" />
+              </GroupRange>
+              <GroupRange Id="P-0930-0_GR-15" RangeStart="3328" RangeEnd="3583" Name="Valeur et Etat" Puid="308">
+                <GroupAddress Id="P-0930-0_GA-96" Address="3329" Name="Salon Appliques valeur et statut" DatapointType="DPST-5-1" Puid="307" />
+                <GroupAddress Id="P-0930-0_GA-97" Address="3363" Name="Salle de bain Vasque gauche statut et valeur" DatapointType="DPST-5-1" Puid="309" />
+                <GroupAddress Id="P-0930-0_GA-98" Address="3365" Name="Salle de bain Vasque droite statut et valeur" DatapointType="DPST-5-1" Puid="310" />
+              </GroupRange>
+              <GroupRange Id="P-0930-0_GR-21" RangeStart="3584" RangeEnd="3839" Name="Temporisé" Puid="319">
+                <GroupAddress Id="P-0930-0_GA-102" Address="3609" Name="Buanderie Plafonnier temporisation" DatapointType="DPST-1-10" Puid="320" />
+                <GroupAddress Id="P-0930-0_GA-103" Address="3627" Name="Hall de nuit appliques temporisation" DatapointType="DPST-1-10" Puid="321" />
+                <GroupAddress Id="P-0930-0_GA-111" Address="3607" Name="Hall de jour Appliques temporisation" DatapointType="DPST-1-10" Puid="333" />
+                <GroupAddress Id="P-0930-0_GA-112" Address="3608" Name="Cellier Plafonnier temporisation" DatapointType="DPST-1-10" Puid="334" />
+              </GroupRange>
+              <GroupRange Id="P-0930-0_GR-25" RangeStart="3840" RangeEnd="4095" Name="Présence" Puid="342">
+                <GroupAddress Id="P-0930-0_GA-123" Address="3865" Name="présence buanderie" DatapointType="DPST-1-1" Puid="368" />
+              </GroupRange>
+            </GroupRange>
+            <GroupRange Id="P-0930-0_GR-12" RangeStart="6144" RangeEnd="8191" Name="Chauffage" Puid="291">
+              <GroupRange Id="P-0930-0_GR-13" RangeStart="6400" RangeEnd="6655" Name="Température" Puid="292">
+                <GroupAddress Id="P-0930-0_GA-83" Address="6400" Name="Bureau" DatapointType="DPST-9-1" Puid="293" />
+                <GroupAddress Id="P-0930-0_GA-84" Address="6401" Name="Hall de jour" DatapointType="DPST-9-1" Puid="294" />
+                <GroupAddress Id="P-0930-0_GA-85" Address="6402" Name="Salon" DatapointType="DPST-9-1" Puid="295" />
+                <GroupAddress Id="P-0930-0_GA-86" Address="6403" Name="Salle à manger" DatapointType="DPST-9-1" Puid="296" />
+                <GroupAddress Id="P-0930-0_GA-87" Address="6404" Name="Cuisine" DatapointType="DPST-9-1" Puid="297" />
+                <GroupAddress Id="P-0930-0_GA-88" Address="6405" Name="Buanderie" DatapointType="DPST-9-1" Puid="298" />
+                <GroupAddress Id="P-0930-0_GA-89" Address="6406" Name="Garage" DatapointType="DPST-9-1" Puid="299" />
+                <GroupAddress Id="P-0930-0_GA-90" Address="6408" Name="Chambre 1" DatapointType="DPST-9-1" Puid="301" />
+                <GroupAddress Id="P-0930-0_GA-91" Address="6409" Name="Chambre 2" DatapointType="DPST-9-1" Puid="302" />
+                <GroupAddress Id="P-0930-0_GA-92" Address="6410" Name="Chambre 3" DatapointType="DPST-9-1" Puid="303" />
+                <GroupAddress Id="P-0930-0_GA-93" Address="6411" Name="Dressing" DatapointType="DPST-9-1" Puid="304" />
+                <GroupAddress Id="P-0930-0_GA-94" Address="6412" Name="Hall de nuit" DatapointType="DPST-9-1" Puid="305" />
+                <GroupAddress Id="P-0930-0_GA-95" Address="6407" Name="Salle de bain" DatapointType="DPST-9-1" Puid="306" />
+              </GroupRange>
+              <GroupRange Id="P-0930-0_GR-32" RangeStart="6144" RangeEnd="6399" Name="Commun" Puid="376" />
+            </GroupRange>
+            <GroupRange Id="P-0930-0_GR-16" RangeStart="8192" RangeEnd="10239" Name="Prise pilotée" Puid="311">
+              <GroupRange Id="P-0930-0_GR-17" RangeStart="8192" RangeEnd="8447" Name="Commun" Puid="312" />
+              <GroupRange Id="P-0930-0_GR-19" RangeStart="8448" RangeEnd="8703" Name="Commutation" Puid="317">
+                <GroupAddress Id="P-0930-0_GA-100" Address="8448" Name="Chauffage d'appoint SDB" DatapointType="DPST-1-1" Puid="315" />
+              </GroupRange>
+              <GroupRange Id="P-0930-0_GR-20" RangeStart="8704" RangeEnd="8959" Name="Valeur" Puid="318">
+                <GroupAddress Id="P-0930-0_GA-101" Address="8704" Name="Chauffage d'appoint SDB" DatapointType="DPST-1-1" Puid="316" />
+                <GroupAddress Id="P-0930-0_GA-120" Address="8705" Name="Chauffage d'appoint SDB" DatapointType="DPST-1-1" Puid="360" />
+              </GroupRange>
+            </GroupRange>
+            <GroupRange Id="P-0930-0_GR-22" RangeStart="10240" RangeEnd="12287" Name="Autre" Puid="326">
+              <GroupRange Id="P-0930-0_GR-23" RangeStart="10752" RangeEnd="11007" Name="Statut" Puid="327">
+                <GroupAddress Id="P-0930-0_GA-107" Address="10752" Name="porte garage statut" DatapointType="DPST-1-1" Puid="328" />
+                <GroupAddress Id="P-0930-0_GA-108" Address="10753" Name="boucle eau chaude haut" DatapointType="DPST-1-1" Puid="329" />
+                <GroupAddress Id="P-0930-0_GA-121" Address="10754" Name="boucle haut chaude bas" Puid="362" />
+              </GroupRange>
+              <GroupRange Id="P-0930-0_GR-24" RangeStart="10496" RangeEnd="10751" Name="commutation" Puid="330">
+                <GroupAddress Id="P-0930-0_GA-109" Address="10496" Name="porte garage commutation" DatapointType="DPST-1-1" Puid="331" />
+                <GroupAddress Id="P-0930-0_GA-110" Address="10497" Name="boucle eau chaude haut" DatapointType="DPST-1-1" Puid="332" />
+                <GroupAddress Id="P-0930-0_GA-122" Address="10498" Name="boucle eau chaude bas" Puid="363" />
+              </GroupRange>
+              <GroupRange Id="P-0930-0_GR-29" RangeStart="10240" RangeEnd="10495" Name="commun" Puid="373" />
+            </GroupRange>
+            <GroupRange Id="P-0930-0_GR-26" RangeStart="1" RangeEnd="2047" Name="Commun" Puid="369">
+              <GroupRange Id="P-0930-0_GR-27" RangeStart="1" RangeEnd="255" Name="Eclairage" Puid="370">
+                <GroupAddress Id="P-0930-0_GA-117" Address="2" Name="Day/Night commutation" Puid="339" />
+                <GroupAddress Id="P-0930-0_GA-124" Address="1" Name="tout" DatapointType="DPST-1-1" Puid="371" />
+              </GroupRange>
+              <GroupRange Id="P-0930-0_GR-28" RangeStart="256" RangeEnd="511" Name="Volet" Puid="372" />
+            </GroupRange>
+            <GroupRange Id="P-0930-0_GR-30" RangeStart="4096" RangeEnd="6143" Name="Volet" Puid="374">
+              <GroupRange Id="P-0930-0_GR-31" RangeStart="4096" RangeEnd="4351" Name="Commun" Puid="375" />
+            </GroupRange>
+          </GroupRanges>
+        </GroupAddresses>
+      </Installation>
+    </Installations>
+  </Project>
+</KNX>
