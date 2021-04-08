@@ -62,7 +62,7 @@ The message format generated is a JSON encoded object with the following members
 
 DPT Definitions and Project files
 ---------------------------------
-The interpretation of KNX values is not specified as part of the wire protocol, but done by the device configuration.
+The interpretation of KNX values is not specified as part of the wire protocol, but done by the homieDevice configuration.
 It is therefore important for knx2mqtt to know about the datapoint definition of a group address.
 
 The easiest way to archieve this is to specify a ETS4 exported project file (.knxproj). knx2mqtt will read and parse this

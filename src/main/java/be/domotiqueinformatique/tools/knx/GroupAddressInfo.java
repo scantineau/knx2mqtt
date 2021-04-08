@@ -1,6 +1,5 @@
 package be.domotiqueinformatique.tools.knx;
 
-import com.tellerulam.knx2mqtt.Main;
 import tuwien.auto.calimero.KNXException;
 import tuwien.auto.calimero.dptxlator.DPTXlator;
 import tuwien.auto.calimero.dptxlator.DPTXlatorBoolean;

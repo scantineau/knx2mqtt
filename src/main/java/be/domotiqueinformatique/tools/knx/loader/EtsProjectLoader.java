@@ -1,41 +1,51 @@
 package be.domotiqueinformatique.tools.knx.loader;
 
-import org.apache.commons.lang3.StringUtils;
+import be.domotiqueinformatique.tools.knx.GroupAddressInfo;
+import be.domotiqueinformatique.tools.knx.loader.util.NodeCrawler;
+import be.domotiqueinformatique.tools.knx.loader.util.NodeExplorer;
+import be.domotiqueinformatique.tools.model.HomieDevice;
+import be.domotiqueinformatique.tools.model.factory.DeviceFactory;
 import org.w3c.dom.Document;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.xpath.XPath;
-import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
-import javax.xml.xpath.XPathFactory;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 class EtsProjectLoader {
-
-
-    static final String LOCATIONS_EXPR = "//Locations";
-    static final String GROUP_ADDRESS_EXPR = "//GroupAddress";
-    private final XPath xPath = XPathFactory.newInstance().newXPath();
+    private static final String LOCATIONS_EXPR = "//Locations";
+    private static final String GROUP_ADDRESS_EXPR = "//GroupAddress";
+    public static final String GROUP_ADDRESS = "GroupAddress";
+    public static final String FUNCTION = "Function";
+    private HashMap<String, GroupAddressInfo> gaTable = new HashMap<>();
 
     EtsProjectLoader() {
 
     }
 
-    public List<NodeExplorer> load(InputStream inputStream) throws ParserConfigurationException, SAXException, IOException, XPathExpressionException {
+    public List<HomieDevice> load(InputStream inputStream) throws ParserConfigurationException, SAXException, IOException, XPathExpressionException {
         Document doc = getDocumentBuilder().parse(inputStream);
         doc.getDocumentElement().normalize();
-        Stream<NodeExplorer> nodeExplorerStream = deepSearchFunctions(new NodeExplorer(getNodeList(doc, xPath, LOCATIONS_EXPR)));
-        nodeExplorerStream.map(nodeExplorer -> ) // map to device
-        return nodeExplorerStream.collect(Collectors.toList());
+        NodeCrawler.getNodeExplorerStream(doc, GROUP_ADDRESS_EXPR, List.of(GROUP_ADDRESS))
+                .forEach(nodeExplorer -> {
+
+gaTable.put()
+                });
+        return NodeCrawler.getNodeExplorerStream(doc, LOCATIONS_EXPR, List.of(FUNCTION))
+                .map(this::toDevice)
+                .collect(Collectors.toList());// map to device
+    }
+
+    private HomieDevice toDevice(NodeExplorer nodeExplorer) {
+        return DeviceFactory.getInstance().getFromDevice(nodeExplorer.getPath(), nodeExplorer.getLastNodeNameAttr(), nodeExplorer.getNodeList());
     }
 
     private DocumentBuilder getDocumentBuilder() throws ParserConfigurationException {
@@ -44,49 +54,24 @@ class EtsProjectLoader {
         return docBuilderFactory.newDocumentBuilder();
     }
 
-    private NodeList getNodeList(Document doc, XPath xPath, String expression) throws XPathExpressionException {
-        return (NodeList) xPath.compile(expression).evaluate(doc, XPathConstants.NODESET);
-    }
-
-    private Stream<NodeExplorer> deepSearchFunctions(NodeExplorer nodeExplorer) {
-        Stream<NodeExplorer> nodeExplorerStream = Stream.<NodeExplorer>builder().build();
-        for (int i = 0; i < nodeExplorer.nodeList.getLength(); i++) {
-            Node item = nodeExplorer.nodeList.item(i);
-            String nodeNameAttr = getName(item);
-            if (item.getNodeName().equals("Function")) {
-                nodeExplorerStream = Stream.concat(nodeExplorerStream, Stream.of(new NodeExplorer(nodeExplorer.path, nodeNameAttr, item.getChildNodes())));
-            } else {
-                nodeExplorerStream = Stream.concat(nodeExplorerStream, deepSearchFunctions(new NodeExplorer(nodeExplorer.path, nodeNameAttr, item.getChildNodes())));
-            }
+    private String translateDPT(String datapointType) {
+        Pattern p = Pattern.compile("DPS?T-([0-9]+)(-([0-9]+))?");
+        Matcher m = p.matcher(datapointType);
+        if (!m.find()) {
+            throw new IllegalArgumentException("Unable to parse DPST '" + datapointType + "'");
         }
-        return nodeExplorerStream;
-    }
-
-    private static String getName(Node node) {
-        if (node.getAttributes() != null && node.getAttributes().getNamedItem("Name") != null) {
-            return node.getAttributes().getNamedItem("Name").getNodeValue();
+        StringBuilder dptBuilder = new StringBuilder();
+        dptBuilder.append(m.group(1));
+        dptBuilder.append('.');
+        String suffix = m.group(3);
+        if (suffix == null) {
+            dptBuilder.append("001");
+        } else {
+            int suffixLength = suffix.length();
+            while (suffixLength++ < 3)
+                dptBuilder.append('0');
+            dptBuilder.append(suffix);
         }
-        return "";
-    }
-
-    static class NodeExplorer {
-        String path;
-        NodeList nodeList;
-
-        NodeExplorer(String path, String nodeNameAttr, NodeList nodeList) {
-            if (StringUtils.isEmpty(path)) {
-                this.path = nodeNameAttr;
-            } else if (StringUtils.isEmpty(nodeNameAttr)) {
-                this.path = path;
-            } else {
-                this.path = path + "/" + nodeNameAttr;
-            }
-            this.nodeList = nodeList;
-        }
-
-        NodeExplorer(NodeList nodeList) {
-            this.path = "";
-            this.nodeList = nodeList;
-        }
+        return dptBuilder.toString();
     }
 }
